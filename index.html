@@ -31,12 +31,20 @@
 		<aside class="poster">
 			<ul class="carousel">
 				<li><img src="http://placehold.it/150x100" width="500" height="450" alt="Крем-брюле и пломбир">
+				<p>Крем-брюле и пломбир с малиновым джемом</p>
 				<a class="btn" href="#">Давайте оба!</a></li>
-				<li><img src="http://placehold.it/150x100" width="500" height="450" alt="Слайд2">
+				<li><img src="http://placehold.it/150x100" width="500" height="450" alt="Шоколадный пломбир и лимонный сорбет">
+				<p>Шоколадный пломбир и лимонный сорбет</p>
 				<a class="btn" href="#">Давайте оба!</a></li>
-				<li><img src="http://placehold.it/150x100" width="500" height="450" alt="Слайд3">
+				<li><img src="http://placehold.it/150x100" width="500" height="450" alt="Пломбир с помадкой и клубничный щербет">
+				<p>Пломбир с помадкой и клубничный щербет</p>
 				<a class="btn" href="#">Давайте оба!</a></li>
 			</ul>
+			<div class="slider">
+				<label><input type="radio" class="hidden" name="slide"></label>
+				<label><input type="radio" class="hidden" name="slide"></label>
+				<label><input type="radio" class="hidden" name="slide"></label>
+			</div>
 		</aside>
 		<section class="present">
 			<ul class="present-variant">
@@ -91,12 +99,14 @@
 			<h4>Новое в нашем блоге</h4>
 			<a class="new" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 		</article>
-		<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
+		<section class="subscription">
 			<h3 class="hidden">Оформить подписку</h3>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-			<input type="email" placeholder="Электронная почта">
-			<button class="btn" type="submit">Отправить</button>
-		</form>
+			<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
+				<input type="email" placeholder="Электронная почта">
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+		</section>
 		<img src="http://placehold.it/150x100" width="600" height="400" alt="Карта">
 		<section class="contacts">
 			<h3 class="hidden">Контактная информация</h3>
@@ -127,5 +137,46 @@
 		</div>
 		<p class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
+	
+	<section class="popup-menu hidden">
+		<h3 class="hidden">Каталог-подменю</h3>
+		<ul class="popup-list">
+			<li><a href="#"><b>Новинки</b><hr></a></li>
+			<li><a href="#">Сливочное</a></li>
+			<li><a href="#">Щербеты</a></li>
+			<li><a href="#">Фруктовый лед</a></li>
+			<li><a href="#">Мелорин</a></li>
+		</ul>
+	</section>
+	<section class="search hidden">
+		<h3 class="hidden">Поиск</h3>
+		<input type="search" name="search" placeholder="Что ищем?">
+	</section>
+	<section class="login hidden">
+		<h3 class="hidden">Авторизация</h3>
+		<form class="login-form" method="get">
+			<p>
+				<input type="email" placeholder="Электронная почта"><br>
+				<input type="password" placeholder="Пароль"><br>
+			</p>
+			<button class="btn" type="submit">Войти</button>
+			<p>
+				<a class="forget" href="#">Забыли пароль?</a><br>
+				<a class="new-reg" href="#">Новая регистрация</a>
+			</p>
+		</form>
+	</section>
+	<section class="connection hidden">
+		<h3>Мы обязательно вам ответим!</h3>
+		<form class="connect-form" method="get">
+			<p>
+				<input type="text" placeholder="Как вас зовут?"><br>
+				<input type="email" placeholder="Ваша почта для ответа?"><br>
+				<textarea name="comment" rows="5">Напишите что-нибудь...</textarea>
+			</p>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+		<span class="close">x</span>
+	</section>
   </body>
 </html>
