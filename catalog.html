@@ -11,14 +11,68 @@
 				<img src="http://placehold.it/150x100" width="100" height="25" alt="Логотип магазина">
 			</a>
 			<ul class="site-navigation">
-				<li><a class="current" href="#">Каталог</a></li>
+				<li><a class="current" href="#">Каталог</a>
+					<ul class="popup-list hidden">
+						<li><a href="#"><b>Новинки</b><hr></a></li>
+						<li><a href="#">Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фруктовый лед</a></li>
+						<li><a href="#">Мелорин</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Доставка и оплата</a></li>
 				<li><a href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li>Поиск</li>
-				<li>Вход</li>
-				<li>2 товара</li>
+				<li>Поиск
+					<section class="search hidden">
+						<h3 class="hidden">Поиск</h3>
+						<input type="search" name="search" placeholder="Что ищем?">
+					</section>
+				</li>
+				<li>Вход
+					<section class="login hidden">
+						<h3 class="hidden">Авторизация</h3>
+						<form class="login-form" method="get">
+							<p>
+								<input type="email" placeholder="Электронная почта"><br>
+								<input type="password" placeholder="Пароль"><br>
+							</p>
+							<button class="btn" type="submit">Войти</button>
+							<p>
+								<a class="forget" href="#">Забыли пароль?</a><br>
+								<a class="new-reg" href="#">Новая регистрация</a>
+							</p>
+						</form>
+					</section>
+				</li>
+				<li>2 товара
+					<section class="busket hidden">
+						<h3 class="hidden">Содержимое корзины</h3>
+						<form class="busket-form" method="get">
+							<table class="busket-list" >
+								<tr>
+									<td>x</td>
+									<td><img src="http://placehold.it/150x100" width="50" height="50" alt="Пломбир с апельсиновым джемом"></td>
+									<td>Пломбир с апельсиновым джемом</td>
+									<td>1,5кг х <span class="price-ice">200руб.</span></td>
+									<td>300руб.</td>
+								</tr>
+								<tr>
+									<td>x</td>
+									<td><img src="http://placehold.it/150x100" width="50" height="50" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td>1,5кг х <span class="price-ice">300руб.</span></td>
+									<td>450руб.</td>
+								</tr>
+								<tr>
+									<td colspan="5"><b>Итого: 750руб.</b></td>
+								</tr>
+							</table>
+							<button class="btn" type="submit">Оформить заказ</button>
+						</form>
+					</section>
+				</li>
 			</ul>
 		</nav>
 		<p class="busy-hours">
@@ -154,31 +208,6 @@
 		</div>
 		<p class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
-	<section class="busket hidden">
-		<h3 class="hidden">Содержимое корзины</h3>
-		<form class="busket-form" method="get">
-			<table class="busket-list" >
-				<tr>
-					<td>x</td>
-					<td><img src="http://placehold.it/150x100" width="50" height="50" alt="Пломбир с апельсиновым джемом"></td>
-					<td>Пломбир с апельсиновым джемом</td>
-					<td>1,5кг х <span class="price-ice">200руб.</span></td>
-					<td>300руб.</td>
-				</tr>
-				<tr>
-					<td>x</td>
-					<td><img src="http://placehold.it/150x100" width="50" height="50" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-					<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-					<td>1,5кг х <span class="price-ice">300руб.</span></td>
-					<td>450руб.</td>
-				</tr>
-				<tr>
-					<td colspan="5"><b>Итого: 750руб.</b></td>
-				</tr>
-			</table>
-			<button class="btn" type="submit">Оформить заказ</button>
-		</form>
-	</section>
 	<section class="current-item hidden">
 		<h3 class="hidden">Просмотр товара</h3>
 		<a class="btn" href="">Быстрый просмотр</a>
