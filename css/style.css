@@ -1,0 +1,20 @@
+﻿body {
+	font-size: 16px;
+	line-height: 1.125;
+	color: rgb(255, 255, 255);
+	font-family: "Roboto", "Arial", sefir;
+	background-color: black;
+}
+
+.container h2 {
+	color:rgb(255, 255, 255);
+	font-size: 23px;
+	line-height: 1.171;
+	font-weight: bold;
+}
+
+.container h4 {
+	color: rgb(50, 50, 50); 
+	font-size: 16px;
+	line-height: 1.375;
+}
