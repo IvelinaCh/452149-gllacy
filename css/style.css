@@ -6,7 +6,8 @@
 	background-color: black;
 }
 
-.title, .subtitle {
+.title, 
+.subtitle {
 	font-family: "Roboto", "Arial", sans-sefir;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
@@ -21,7 +22,8 @@
 	font-size: 23px;
 }
 
-.caption, .subcaption {
+.caption, 
+.subcaption {
 	font-family: "Roboto", "Arial", sans-sefir;
 	color: rgb(50, 50, 50);
  }
