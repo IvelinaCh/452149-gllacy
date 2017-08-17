@@ -1,20 +1,37 @@
 ﻿body {
 	font-size: 16px;
-	line-height: 1.125;
+	font-family: "Roboto", "Arial", sans-sefir;
 	color: rgb(255, 255, 255);
-	font-family: "Roboto", "Arial", sefir;
+	line-height: 1.125;
 	background-color: black;
 }
 
-.container h2 {
-	color:rgb(255, 255, 255);
-	font-size: 23px;
-	line-height: 1.171;
+.title, .subtitle {
+	font-family: "Roboto", "Arial", sans-sefir;
+	color: rgb(255, 255, 255);
 	font-weight: bold;
+	line-height: 1.171;
 }
 
-.container h4 {
-	color: rgb(50, 50, 50); 
+.title {
+	font-size: 35px;
+}
+
+.subtitle {
+	font-size: 23px;
+}
+
+.caption, .subcaption {
+	font-family: "Roboto", "Arial", sans-sefir;
+	color: rgb(50, 50, 50);
+ }
+
+ .caption {
+	font-size: 24px;
+	line-height: 1.167;
+}
+
+.subcaption {
 	font-size: 16px;
 	line-height: 1.375;
 }
