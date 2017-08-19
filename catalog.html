@@ -25,19 +25,21 @@
 				<li><a href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li>Поиск
+				<li>
+					<button type="button">Поиск</button>
 					<section class="search">
-						<h3 class="hidden caption">Поиск</h3>
-						<input type="search" name="search" placeholder="Что ищем?">
+						<label class="visually-hidden">Поиск
+						<input type="search" name="search" placeholder="Что ищем?"></label>
 					</section>
 				</li>
-				<li>Вход
+				<li>
+					<a href="#">Вход</a>
 					<section class="login">
-						<h3 class="hidden caption">Авторизация</h3>
+						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
 							<p>
-								<input type="email" placeholder="Электронная почта"><br>
-								<input type="password" placeholder="Пароль"><br>
+								<label class="visually-hidden">Электронная почта<input type="email" placeholder="Электронная почта"></label><br>
+								<label class="visually-hidden">Пароль<input type="password" placeholder="Пароль"></label><br>
 							</p>
 							<button class="btn" type="submit">Войти</button>
 							<p>
@@ -47,20 +49,20 @@
 						</form>
 					</section>
 				</li>
-				<li>2 товара
+				<li><a href="#">2 товара</a>
 					<section class="busket">
-						<h3 class="hidden caption">Содержимое корзины</h3>
+						<h3 class="visually-hidden caption">Содержимое корзины</h3>
 						<form class="busket-form" method="get">
 							<table class="busket-list" >
 								<tr>
-									<td>x</td>
+									<td><button class="del" type="button">Удалить</button></td>
 									<td><img src="img/minIce1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
 									<td>Пломбир с апельсиновым джемом</td>
 									<td>1,5кг х <span class="price-ice">200руб.</span></td>
 									<td>300руб.</td>
 								</tr>
 								<tr>
-									<td>x</td>
+									<td><button class="del" type="button">Удалить</button></td>
 									<td><img src="img/minIce2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 									<td>1,5кг х <span class="price-ice">300руб.</span></td>
@@ -102,23 +104,23 @@
 			</label>
 			<span class="hit">Жирность:</span>
 				<ul id="hit" class="fat-radio-list">
-					<li><input type="radio" class="hidden" name="fat" value="0%">0%</li>
-					<li><input type="radio" class="hidden" name="fat" value="до 10%">до 10%</li>
-					<li><input type="radio" class="hidden" name="fat" value="до 30%">до 30%</li>
-					<li><input type="radio" class="hidden" name="fat" value="выше 30%">выше 30%</li>
+					<li><label><input type="radio" class="visually-hidden" name="fat" value="0%">0%</label></li>
+					<li><label><input type="radio" class="visually-hidden" name="fat" value="до 10%">до 10%</label></li>
+					<li><label><input type="radio" class="visually-hidden" name="fat" value="до 30%">до 30%</label></li>
+					<li><label><input type="radio" class="visually-hidden" name="fat" value="выше 30%">выше 30%</label></li>
 				</ul>
 			<span class="topping">Наполнители:</span>
 				<ul id="topping" class="topping-list">
-					<li><input type="checkbox" class="hidden" name="topping" value="chokolad">шоколадные</li>
-					<li><input type="checkbox" class="hidden" name="topping" value="sugar">сахарные присыпки</li>
-					<li><input type="checkbox" class="hidden" name="topping" value="fruit">фрукты</li>
-					<li><input type="checkbox" class="hidden" name="topping" value="sirop">сиропы</li>
-					<li><input type="checkbox" class="hidden" name="topping" value="jam">джемы</li>
+					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="chokolad">шоколадные</label></li>
+					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="sugar">сахарные присыпки</label></li>
+					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="fruit">фрукты</label></li>
+					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="sirop">сиропы</label></li>
+					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="jam">джемы</label></li>
 				</ul>
 			<button class="enter-filter" type="submit">Применить</button>
 		</form>
 		<section class="catalog">
-			<h2 class="hidden subtitle">КАТАЛОГ:</h2>
+			<h2 class="visually-hidden subtitle">КАТАЛОГ:</h2>
 			<ul class="catalog-list">
 				<li>
 					<a href="#"><img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
@@ -193,10 +195,10 @@
 	<footer class="main-footer">
 		<div class="social">
 			<ul class="social-list">
-				<li><a class="social-tw" href="#">tw</a></li>
-				<li><a class="social-im" href="#">im</a></li>
-				<li><a class="social-fb" href="#">fb</a></li>
-				<li><a class="social-vk" href="#">vk</a></li>
+				<li><label class="visually-hidden"><a class="social-tw" href="#">twitter</a></label></li>
+				<li><label class="visually-hidden"><a class="social-im" href="#">instagram</a></label></li>
+				<li><label class="visually-hidden"><a class="social-fb" href="#">facebook</a></label></li>
+				<li><label class="visually-hidden"><a class="social-vk" href="#">vkontakte</a></label></li>
 			</ul>
 		</div>
 		<div class="about-us">
@@ -210,7 +212,7 @@
 		<p class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
 	<section class="current-item">
-		<h3 class="hidden caption">Просмотр товара</h3>
+		<h3 class="visually-hidden caption">Просмотр товара</h3>
 		<a class="btn" href="">Быстрый просмотр</a>
 	</section>
   </body>

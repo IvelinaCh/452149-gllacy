@@ -24,19 +24,21 @@
 				<li><a href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li>Поиск
+				<li>
+					<button type="button">Поиск</button>
 					<section class="search">
-						<h3 class="hidden caption">Поиск</h3>
-						<input type="search" name="search" placeholder="Что ищем?">
+						<label class="visually-hidden">Поиск
+						<input type="search" name="search" placeholder="Что ищем?"></label>
 					</section>
 				</li>
-				<li>Вход
+				<li>
+					<a href="#">Вход</a>
 					<section class="login">
-						<h3 class="hidden caption">Авторизация</h3>
+						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
 							<p>
-								<input type="email" placeholder="Электронная почта"><br>
-								<input type="password" placeholder="Пароль"><br>
+								<label class="visually-hidden">Электронная почта<input type="email" placeholder="Электронная почта"></label><br>
+								<label class="visually-hidden">Пароль<input type="password" placeholder="Пароль"></label><br>
 							</p>
 							<button class="btn" type="submit">Войти</button>
 							<p>
@@ -46,7 +48,7 @@
 						</form>
 					</section>
 				</li>
-				<li>Пусто</li>
+				<li><a href="#">Пусто</a></li>
 			</ul>
 		</nav>
 		<p class="busy-hours">
@@ -55,7 +57,7 @@
 		</p>
 	</header>
 	<main class="container">
-		<h1 class="hidden title">GllacyShop</h1>
+		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
 			<ul class="carousel">
 				<li><img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
@@ -69,9 +71,9 @@
 				<a class="btn" href="#">Давайте оба!</a></li>
 			</ul>
 			<div class="slider">
-				<label><input type="radio" class="hidden" name="slide"></label>
-				<label><input type="radio" class="hidden" name="slide"></label>
-				<label><input type="radio" class="hidden" name="slide"></label>
+				<label class="visually-hidden"><input type="radio" class="visually-hidden" name="slide">Крем-брюле и пломбир с малиновым джемом</label>
+				<label class="visually-hidden"><input type="radio" class="visually-hidden" name="slide">Шоколадный пломбир и лимонный сорбет</label>
+				<label class="visually-hidden"><input type="radio" class="visually-hidden" name="slide">Пломбир с помадкой и клубничный щербет</label>
 			</div>
 		</div>
 		<section class="present">
@@ -91,7 +93,7 @@
 			</ul>
 		</section>
 		<section class="hits">
-			<h3 class="hidden caption">Популярное</h3>
+			<h3 class="visually-hidden caption">Популярное</h3>
 			<ul class="hits-list">
 				<li>
 					<a href="#"><img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
@@ -116,7 +118,7 @@
 			</ul>
 		</section>
 		<section class="description">
-			<h3 class="hidden caption">Описание работы</h3>
+			<h3 class="visually-hidden caption">Описание работы</h3>
 			<p class="shop"><b>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
 			<p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 			<p class="eko">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -128,16 +130,16 @@
 			<a class="new" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 		</article>
 		<section class="subscription">
-			<h3 class="hidden caption">Оформить подписку</h3>
+			<h3 class="visually-hidden caption">Оформить подписку</h3>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
-				<input type="email" placeholder="Электронная почта">
+				<label class="visually-hidden">Электронная почта<input type="email" placeholder="Электронная почта"></label>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
 		</section>
-		<img src="img/map1.jpg" width="1250" height="430" alt="Карта">
+		<img src="img/map1.jpg" width="1250" height="430" alt="Адрес главного офиса и офлайн магазина: ул.Большая Конюшенная 19/8, Санкт-Петербург">
 		<section class="contacts">
-			<h3 class="hidden caption">Контактная информация</h3>
+			<h3 class="visually-hidden caption">Контактная информация</h3>
 			<p>Адрес главного офиса и офлайн магазина:</p>
 			<b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
 			<p>Для заказов по телефону:</p>
@@ -149,10 +151,10 @@
 	<footer class="main-footer">
 		<div class="social">
 			<ul class="social-list">
-				<li><a class="social-tw" href="#">tw</a></li>
-				<li><a class="social-im" href="#">im</a></li>
-				<li><a class="social-fb" href="#">fb</a></li>
-				<li><a class="social-vk" href="#">vk</a></li>
+				<li><label class="visually-hidden"><a class="social-tw" href="#">twitter</a></label></li>
+				<li><label class="visually-hidden"><a class="social-im" href="#">instagram</a></label></li>
+				<li><label class="visually-hidden"><a class="social-fb" href="#">facebook</a></label></li>
+				<li><label class="visually-hidden"><a class="social-vk" href="#">vkontakte</a></label></li>
 			</ul>
 		</div>
 		<div class="about-us">
@@ -169,17 +171,20 @@
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
-				<input type="text" placeholder="Как вас зовут?">
+				<label class="visually-hidden">Имя
+				<input type="text" placeholder="Как вас зовут?"></label>
 			</p>
 			<p>
-				<input type="email" placeholder="Ваша почта для ответа?">
+				<label class="visually-hidden">Электронная почта
+				<input type="email" placeholder="Ваша почта для ответа?"></label>
 			</p>
 			<p>
-				<textarea name="comment" rows="5">Напишите что-нибудь...</textarea>
+				<label class="visually-hidden">Текст письма
+				<textarea name="comment" rows="5">Напишите что-нибудь...</textarea></label>
 			</p>
 			<button class="btn" type="submit">Отправить</button>
 		</form>
-		<span class="close">x</span>
+		<button class="close" type="button">Закрыть</button>
 	</section>
   </body>
 </html>
