@@ -14,7 +14,7 @@
 				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
 			</a>
 			<ul class="site-navigation">
-				<li><a class="current-page">Каталог</a>
+				<li><a class="main-menu-li current-page">Каталог</a>
 					<ul class="popup-list">
 						<li><a href="#"><b>Новинки</b><hr></a></li>
 						<li><a href="#">Сливочное</a></li>
@@ -23,19 +23,19 @@
 						<li><a href="#">Мелорин</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#">О Компании</a></li>
+				<li><a class="main-menu-li" href="#">Доставка и оплата</a></li>
+				<li><a class="main-menu-li" href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
 				<li>
-					<button type="button">Поиск</button>
-					<section class="search">
+					<button class="user-style button" type="button">Поиск</button>
+					<form class="search-form" method="get">
 						<label class="visually-hidden">Поиск
 						<input type="search" name="search" placeholder="Что ищем?"></label>
-					</section>
+					</form>
 				</li>
 				<li>
-					<a href="#">Вход</a>
+					<a class="user-style" href="#">Вход</a>
 					<section class="login">
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
@@ -44,14 +44,14 @@
 								<label class="visually-hidden">Пароль<input type="password" placeholder="Пароль"></label><br>
 							</p>
 							<button class="btn button" type="submit">Войти</button>
+						</form>
 							<p>
 								<a class="forget" href="#">Забыли пароль?</a><br>
 								<a class="new-reg" href="#">Новая регистрация</a>
 							</p>
-						</form>
 					</section>
 				</li>
-				<li><a href="#">2 товара</a>
+				<li><a class="user-style" href="#">2 товара</a>
 					<section class="busket">
 						<h3 class="visually-hidden caption">Содержимое корзины</h3>
 						<form class="busket-form" method="get">
@@ -71,7 +71,7 @@
 									<td>450руб.</td>
 								</tr>
 								<tr>
-									<td colspan="5"><b>Итого: 750руб.</b></td>
+									<td class="td-basket" colspan="5"><b>Итого: 750руб.</b></td>
 								</tr>
 							</table>
 							<button class="btn button" type="submit">Оформить заказ</button>
