@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси - Каталог</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
  <body>
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="logo" href="index.html">
-				<img src="http://placehold.it/150x100" width="100" height="25" alt="Логотип магазина">
+				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
 			</a>
 			<ul class="site-navigation">
-				<li><a class="current">Каталог</a>
+				<li><a class="current-page">Каталог</a>
 					<ul class="popup-list">
 						<li><a href="#"><b>Новинки</b><hr></a></li>
 						<li><a href="#">Сливочное</a></li>
@@ -41,7 +43,7 @@
 								<label class="visually-hidden">Электронная почта<input type="email" placeholder="Электронная почта"></label><br>
 								<label class="visually-hidden">Пароль<input type="password" placeholder="Пароль"></label><br>
 							</p>
-							<button class="btn" type="submit">Войти</button>
+							<button class="btn button" type="submit">Войти</button>
 							<p>
 								<a class="forget" href="#">Забыли пароль?</a><br>
 								<a class="new-reg" href="#">Новая регистрация</a>
@@ -72,7 +74,7 @@
 									<td colspan="5"><b>Итого: 750руб.</b></td>
 								</tr>
 							</table>
-							<button class="btn" type="submit">Оформить заказ</button>
+							<button class="btn button" type="submit">Оформить заказ</button>
 						</form>
 					</section>
 				</li>
@@ -87,7 +89,7 @@
 		<ul class="breadcrambs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
-			<li>Сливочное</li>
+			<li class="current-breadcrambs">Сливочное</li>
 		</ul>
 		<h1 class="title">Сливочное мороженое</h1>
 		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -100,7 +102,7 @@
 				</select>
 			</label>
 			<label>Цена: 100руб. - 500руб.
-				<input type="range" min="100" max="500" step="10" value="350">
+				<div class="range"><input type="range" min="100" max="500" step="10" value="350"></div>
 			</label>
 			<span class="hit">Жирность:</span>
 				<ul id="hit" class="fat-radio-list">
