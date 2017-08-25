@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="logo">
+		<a class="logo">
 				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
-			</a>
-			<ul class="site-navigation">
+		</a>
+		<nav class="main-navigation">
+			<ul class="site-navigation no-mark">
 				<li><a class="main-menu-li" href="catalog.html">Каталог</a>
-					<ul class="popup-list">
+					<ul class="popup-list no-mark">
 						<li><a href="#"><b>Новинки</b><hr></a></li>
 						<li><a href="#">Сливочное</a></li>
-						<li class="current-page"><a href="#">Щербеты</a></li>
+						<li><a href="#">Щербеты</a></li>
 						<li><a href="#">Фруктовый лед</a></li>
 						<li><a href="#">Мелорин</a></li>
 					</ul></li>
 				<li><a class="main-menu-li" href="#">Доставка и оплата</a></li>
 				<li><a class="main-menu-li" href="#">О Компании</a></li>
 			</ul>
-			<ul class="user-navigation">
+			<ul class="user-navigation no-mark">
 				<li>
-					<button class="user-style button" type="button">Поиск</button>
+					<button class="user-style button" type="button"><img src="img/loupe.svg" width="17" height="17">Поиск</button>
 					<form class="search-form" method="get">
 						<label class="visually-hidden">Поиск
 						<input type="search" name="search" placeholder="Что ищем?"></label>
 					</form>
 				</li>
 				<li>
-					<a class="user-style" href="#">Вход</a>
+					<a class="user-style" href="#"><img src="img/entrance1.svg" width="21" height="19">Вход</a>
 					<section class="login">
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
@@ -50,7 +50,7 @@
 							</p>
 					</section>
 				</li>
-				<li><a class="user-style" href="#">Пусто</a></li>
+				<li><a class="user-style" href="#"><img src="img/basket.svg" width="21" height="20">Пусто</a></li>
 			</ul>
 		</nav>
 		<p class="busy-hours">
@@ -61,7 +61,7 @@
 	<main class="container">
 		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
-			<ul class="carousel">
+			<ul class="carousel no-mark">
 				<li><img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
 				<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
 				<a class="btn" href="#">Давайте оба!</a></li>
@@ -79,55 +79,59 @@
 			</div>
 		</div>
 		<section class="present">
-			<ul class="present-variant">
-				<li>
+			<ul class="present-variant no-mark">
+				<li class="present1">
 					<h2 class="subtitle">Малинка даром!</h2>
-					<p>При покупке 2кг любого фруктового мороженного, добавим в
-					ваш заказ банку малинового варенья бесплатно.</p>
+					<p>При покупке 2кг любого фруктового мороженного, добавим 
+					в ваш заказ банку малинового варенья бесплатно.</p>
 					<a class="btn" href="#">Хочу варенье!</a>
 				</li>
-				<li>
+				<li class="present2">
 					<h2 class="subtitle">Шоколадки даром!</h2>
-					<p>При покупке 2кг любого фруктового мороженного, добавим в
-					ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<p>При покупке 2кг любого фруктового мороженного, добавим в	ваш заказ упаковку 
+					вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a class="btn" href="#">Хочу шоколадки!</a>
 				</li>
 			</ul>
 		</section>
 		<section class="hits">
-			<ul class="hits-list">
+			<ul class="hits-list no-mark">
 				<li>
 					<img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-					<b>310<span class="valuta">₽</span>/кг</b>
+					<img src="img/hit.svg" width="61" height="61" alt="hit">
+					<b>310</b><span class="valuta">₽</span><b>/кг</b>
 					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное">
-					<b>380<span class="valuta">₽</span>/кг</b>
+					<img src="img/hit.svg" width="61" height="61" alt="hit">
+					<b>380</b><span class="valuta">₽</span><b>/кг</b>
 					<p>Сливочно-кофейное с кусочками шоколада</p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-					<b>355<span class="valuta">₽</span>/кг</b>
+					<img src="img/hit.svg" width="61" height="61" alt="hit">
+					<b>355</b><span class="valuta">₽</span><b>/кг</b>
 					<p>Сливочно-клубничное с присыпкой из белого шоколала</p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-					<b>415<span class="valuta">₽</span>/кг</b>
+					<img src="img/hit.svg" width="61" height="61" alt="hit">
+					<b>415</b><span class="valuta">₽</span><b>/кг</b>
 					<p>Сливочное крем-брюле с карамельной подливкой</p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 			</ul>
 		</section>
 		<section class="description">
-			<p class="shop"><b>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
-			<p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-			<p class="eko">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-			<p class="ferm">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
-			<p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			<p class="shop">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+			<p class="ice-cream"><img src="img/ice-cream.svg" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p class="eko"><img src="img/eco.svg" width="49" height="49">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			<p class="ferm"><img src="img/cow.svg" width="49" height="49">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
+			<p class="delivery"><img src="img/thermometer.svg" width="49" height="49">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 		</section>
 		<article class="new">
 			<h4 class="subcaption">Новое в нашем блоге</h4>
@@ -154,22 +158,22 @@
 	</main>
 	<footer class="main-footer">
 		<div class="social">
-			<ul class="social-list">
-				<li><label class="visually-hidden"><a class="social-tw" href="#">twitter</a></label></li>
-				<li><label class="visually-hidden"><a class="social-im" href="#">instagram</a></label></li>
-				<li><label class="visually-hidden"><a class="social-fb" href="#">facebook</a></label></li>
-				<li><label class="visually-hidden"><a class="social-vk" href="#">vkontakte</a></label></li>
+			<ul class="social-list no-mark">
+				<li><label class="visually-hidden"><a class="social-tw" href="#"><img src="img/twitter.svg" width="32" height="32"></a></label></li>
+				<li><label class="visually-hidden"><a class="social-im" href="#"><img src="img/instagram.svg" width="32" height="32"></a></label></li>
+				<li><label class="visually-hidden"><a class="social-fb" href="#"><img src="img/fb.svg" width="32" height="32"></a></label></li>
+				<li><label class="visually-hidden"><a class="social-vk" href="#"><img src="img/vk.svg" width="32" height="32"></a></label></li>
 			</ul>
 		</div>
 		<div class="about-us">
-			<ul class="about-list">
-				<li><a href="#"><b>Для поставщиков</b></a></li>
+			<ul class="about-list no-mark">
+				<li><img src="img/heart.svg" width="15" height="13"><a href="#"><b>Для поставщиков</b></a></li>
 				<li><a href="#">О производстве</a></li>
 				<li><a href="#">Наши документы</a></li>
 				<li><a href="#">Экологические стандарты</a></li>
 			</ul>
 		</div>
-		<p class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
 	<section class="connection">
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
