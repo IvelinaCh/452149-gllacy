@@ -582,3 +582,7 @@ input:{
 	background-color: #e6ebe9;
 	border: 3px solid #c2cec7;
 }
+
+.svg {
+	vertical-align: middle;
+}
