@@ -544,7 +544,7 @@ input:{
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.valuta {
+.currency {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -588,10 +588,10 @@ input:{
 	background-color: rgba(255, 255, 255, 0.1) ;
 }
 
-.catalog-list li:hover .valuta,
-.catalog-list li:focus .valuta, 
-.hits-list li:hover .valuta,
-.hits-list li:focus  .valuta {
+.catalog-list li:hover .currency,
+.catalog-list li:focus .currency, 
+.hits-list li:hover .currency,
+.hits-list li:focus  .currency {
 	font-weight: bold;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -726,3 +726,4 @@ input:{
 	background-image: url("../img/vk3.svg");
 	border: 3px solid #dae2de;
 }
+.visually-hidden{display: none;}

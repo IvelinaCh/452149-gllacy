@@ -29,8 +29,8 @@
 				<li>
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<form class="search-form" method="get">
-						<label class="visually-hidden">Поиск
-						<input class="input" type="search" name="search" placeholder="Что ищем?"></label>
+						<label class="visually-hidden" for="search">Поиск</label>
+						<input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
 					</form>
 				</li>
 				<li>
@@ -39,8 +39,10 @@
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
 							<p>
-								<label class="visually-hidden">Электронная почта<input class="input" type="email" placeholder="Электронная почта"></label><br>
-								<label class="visually-hidden">Пароль<input class="input" type="password" placeholder="Пароль"></label><br>
+								<label class="visually-hidden" for="mail">Электронная почта</label>
+								<input class="input" type="email" id="mail" placeholder="Электронная почта"><br>
+								<label class="visually-hidden" for="password">Пароль</label>
+								<input class="input" type="password" id="password" placeholder="Пароль"><br>
 							</p>
 							<button class="btn button" type="submit">Войти</button>
 						</form>
@@ -98,25 +100,25 @@
 			<ul class="hits-list no-mark">
 				<li>
 					<img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-					<b>310</b><span class="valuta">₽</span><b>/кг</b>
+					<b>310</b><span class="currency">₽</span><b>/кг</b>
 					<p><a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное">
-					<b>380</b><span class="valuta">₽</span><b>/кг</b>
+					<b>380</b><span class="currency">₽</span><b>/кг</b>
 					<p><a>Сливочно-кофейное с кусочками шоколада</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-					<b>355</b><span class="valuta">₽</span><b>/кг</b>
+					<b>355</b><span class="currency">₽</span><b>/кг</b>
 					<p><a>Сливочно-клубничное с присыпкой из белого шоколала</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-					<b>415</b><span class="valuta">₽</span><b>/кг</b>
+					<b>415</b><span class="currency">₽</span><b>/кг</b>
 					<p><a>Сливочное крем-брюле с карамельной подливкой</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
@@ -137,7 +139,8 @@
 			<h3 class="visually-hidden caption">Оформить подписку</h3>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
-				<label class="visually-hidden">Электронная почта<input class="input" type="email" placeholder="Электронная почта"></label>
+				<label class="visually-hidden" for="email">Электронная почта</label>
+				<input class="input" type="email" id="email" placeholder="Электронная почта">
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
 		</section>
@@ -155,10 +158,10 @@
 	<footer class="main-footer">
 		<div class="social-div">
 			<ul class="social-list no-mark">
-				<li><label class="visually-hidden"><a class="social social-tw" href="#"></a>Мы в твиттер</label></li>
-				<li><label class="visually-hidden"><a class="social social-im" href="#"></a>Мы в инстаграм</label></li>
-				<li><label class="visually-hidden"><a class="social social-fb" href="#"></a>Мы в фейсбук</label></li>
-				<li><label class="visually-hidden"><a class="social social-vk" href="#"></a>Мы Вконтакте</label></li>
+				<li><a class="social social-tw" id="social-tw" href="#"></a><label class="visually-hidden" for="social-tw">Мы в твиттер</label></li>
+				<li><a class="social social-im" id="social-im" href="#"></a><label class="visually-hidden" for="social-im">Мы в инстаграм</label></li>
+				<li><a class="social social-fb" id="social-fb" href="#"></a><label class="visually-hidden" for="social-fb">Мы в фейсбук</label></li>
+				<li><a class="social social-vk" id="social-vk" href="#"></a><label class="visually-hidden" for="social-vk">Мы Вконтакте</label></li>
 			</ul>
 		</div>
 		<div class="about-us">
@@ -175,16 +178,16 @@
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
-				<label class="visually-hidden">Как вас зовут?
-				<input class="input" type="text" placeholder="Как вас зовут?"></label>
+				<label class="visually-hidden" for="name">Как вас зовут?</label>
+				<input class="input" type="text" id="name" placeholder="Как вас зовут?">
 			</p>
 			<p>
-				<label class="visually-hidden">Ваша почта для ответа?
-				<input class="input" type="email" placeholder="Ваша почта для ответа?"></label>
+				<label class="visually-hidden" for="y-mail">Ваша почта для ответа?</label>
+				<input class="input" type="email" id="y-mail" placeholder="Ваша почта для ответа?">
 			</p>
 			<p>
-				<label class="visually-hidden">Текст письма
-				<textarea class="input" name="comment" rows="5">Напишите что-нибудь...</textarea></label>
+				<label class="visually-hidden" for="comment">Текст письма</label>
+				<textarea class="input" name="comment" id="comment" rows="5">Напишите что-нибудь...</textarea>
 			</p>
 			<button class="btn button" type="submit">Отправить</button>
 		</form>
