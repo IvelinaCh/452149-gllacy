@@ -7,12 +7,12 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
- <body>
+ <body class="inner-page">
 	<header class="main-header">
-		<a class="logo" href="index.html">
-				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
-		</a>
 		<nav class="main-navigation">
+			<a class="logo" href="index.html">
+				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
+			</a>
 			<ul class="site-navigation no-mark">
 				<li><a class="main-menu-li current-page">Каталог</a>
 					<ul class="popup-list no-mark">
@@ -82,17 +82,19 @@
 				</li>
 			</ul>
 		</nav>
-		<p class="busy-hours">
-			С 10 до 20, ежедневно<br>
-			<b>8 812 450-25-25</b>
-		</p>
-	</header>
-	<main>
 		<ul class="breadcrambs no-mark">
 			<li><a href="index.html">Главная</a> >></li>
 			<li><a href="#">Каталог</a> >></li>
 			<li class="current-breadcrambs">Сливочное</li>
 		</ul>
+		<p class="busy-hours">
+			С 10 до 20, ежедневно<br>
+			<b>8 812 450-25-25</b>
+		</p>
+		
+	</header>
+	<main class="container">
+		
 		<h1 class="title">Сливочное мороженое</h1>
 		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 			<label>Сортировка:

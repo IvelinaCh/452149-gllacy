@@ -9,10 +9,10 @@
   </head>
   <body>
 	<header class="main-header">
-		<a class="logo">
-				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
-		</a>
 		<nav class="main-navigation">
+			<a class="logo">
+				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
+			</a>
 			<ul class="site-navigation no-mark">
 				<li><a class="main-menu-li" href="catalog.html">Каталог</a>
 					<ul class="popup-list no-mark">
@@ -55,14 +55,13 @@
 				<li><a class="user-style button-basket" href="#">Пусто</a></li>
 			</ul>
 		</nav>
-		
-	</header>
-	<main class="container">
-		<h1 class="visually-hidden title">GllacyShop</h1>
 		<p class="busy-hours">
 			С 10 до 20, ежедневно<br>
 			<b>8 812 450-25-25</b>
 		</p>
+	</header>
+	<main class="container">
+		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
 			<ul class="carousel no-mark">
 				<li><img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
@@ -132,6 +131,7 @@
 			<p class="ferm">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
 			<p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 		</section>
+		<div class="news">
 		<article class="new">
 			<h4 class="subcaption">Новое в нашем блоге</h4>
 			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -139,13 +139,16 @@
 		<section class="subscription">
 			<h3 class="visually-hidden caption">Оформить подписку</h3>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-			<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
+			<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
 				<span class="visually-hidden">Электронная почта</span>
 				<input class="input" type="email" id="email" placeholder="Электронная почта">
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
 		</section>
-		<img src="img/map1.jpg" width="1250" height="430" alt="Адрес главного офиса и офлайн магазина: ул.Большая Конюшенная 19/8, Санкт-Петербург">
+		</div>
+		<div class="maps-contacts">
+		<!--<img src="img/map1.jpg" width="1250" height="430" alt="Адрес главного офиса и офлайн магазина: ул.Большая Конюшенная 19/8, Санкт-Петербург">-->
+
 		<section class="contacts">
 			<h3 class="visually-hidden caption">Контактная информация</h3>
 			<p>Адрес главного офиса и офлайн магазина:</p>
@@ -155,6 +158,7 @@
 			<p>(с 10 до 20 ежедневно)</p>
 			<a class="btn" href="#">Форма обратной связи</a>
 		</section>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="social-div">

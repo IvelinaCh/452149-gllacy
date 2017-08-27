@@ -25,6 +25,7 @@ a {
 
 .title, 
 .subtitle {
+	margin: 0;
 	font-size: 35px;
 	line-height: 41px;
 	color: #ffffff;
@@ -374,11 +375,12 @@ input::placeholder:focus {
 }
 
 .about-us {
-	text-align: center;
 	column-count: 2;
 }
 
 .about-us  a{
+	padding: 0;
+	margin: 0;
 	font-size: 13px;
 	line-height: 18px;
 	color: #ffffff;
@@ -409,10 +411,10 @@ input::placeholder:focus {
 	height: 13px;
 	background-image: url("../img/heart.svg");
 }
-
+/*
 .heart:hover .heart::before{
 	background: url("../img/heartR.svg") no-repeat;
-}
+}*/
 
 .copyright {
 	text-align: center;
@@ -572,8 +574,7 @@ input::placeholder:focus {
 	background-color: #ffffff;
 }
 
-.hits b,
-.catalog b {
+.catalog-list-item b {
 	font-size: 45px;
 	line-height: 45px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -586,8 +587,7 @@ input::placeholder:focus {
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.catalog a,
-.hits a {
+.catalog-list-item a {
 	font: inherit;
 	font-weight: 500;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -604,6 +604,7 @@ input::placeholder:focus {
 
 .hits-list li {
 	position: relative;
+	text-align: center;
 	}
 
 .hits-list li::after {
@@ -758,7 +759,7 @@ input::placeholder:focus {
 	background-image: url("../img/vk3.svg");
 	border: 3px solid #dae2de;
 }
-/*-----------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 /*html,
 body {
   min-width: 1122px;
@@ -766,34 +767,161 @@ body {
 }
 body {
   /* Временно для сетки *//*
-  background-image: url('../img/gllacy-index-1200.jpg');
+  background-image: url('../img/gllacy-catalog-1200.jpg');
   background-size: 1372px auto;
   background-repeat: no-repeat;
-}
+}*/
 
 .main-header {
 	display: flex;
-	padding: 10px 30px;
-	align-items: flex-start;
-}
-	
-.logo {
-	width: 170px;
-	height: 65px;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 10px 30px 0 30px;
 }
 
-.main-navigation {
+.main-navigation{
 	display: flex;
-	justify-content: space-between;
-	
+	align-items: flex-start;
 	width: 100%;
 	padding: 0;
-	margin: 0;border: 1px solid;
+	margin: 0;
+}
+
+.user-navigation {
+	margin-left: auto;
 }
 
 .busy-hours {
-	float: right;
+	margin-left: auto;
+	align-self: flex-end;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.poster {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.present-variant,
+.news {
+	display: flex;
+	justify-content: space-between;
+	width: 100%; /*1146px*/
+	margin-bottom: 40px;
+}
+
+.present1,
+.present2,
+.new,
+.subscription {
+	margin: 0;
+	padding: 0 20px;
+	width: 560px;
+	min-height: 229px;
+}
+
+.hits-list{
+	display: flex;
+	margin-bottom: 40px;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	padding: 25px;
+} 
+
+.shop {
 	margin: 0;
 	padding: 0;
 }
-*/
+
+.maps-contacts {
+	display: flex;
+	align-items: center;
+	min-width: 1200px;
+	min-height: 430px;
+	background: url("../img/map1.jpg") no-repeat 50% 50%;
+	margin-bottom: 40px;
+}
+
+.contacts {
+	margin-left: auto;
+}
+
+.main-footer {
+	display: flex; 
+	padding: 40px 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-list {
+	padding: 0;
+	margin: 0;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social {
+	margin-right: 10px;
+}
+
+.social-vk {
+	margin-right: 0;
+}
+
+.breadcrambs {
+	display: flex; 
+	margin: 0;
+	padding: 0;
+	align-items: flex-end;
+}
+
+.filter {
+	display: flex;
+	flex-wrap:rap;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.catalog-list  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 80px;
+}
+/*
+.paginator {
+	margin-left: auto;
+	margin-bottom: 30px;
+}*/
+
+.inner-page .main-footer {
+	border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.catalog-list-item {
+	width: 267px;
+	margin-bottom: 40px;
+	margin-right: 25px;
+}
+
+.catalog-list-item:nth-child(4n) {
+	margin-right: 0;
+}
