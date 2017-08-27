@@ -14,6 +14,15 @@ a {
 	text-decoration: none;
 }
 
+.popup-list,
+.search-form,
+.login,
+.connection,
+.busket,
+.visually-hidden {
+	display: none;
+}
+
 .title, 
 .subtitle {
 	font-size: 35px;
@@ -255,11 +264,41 @@ a {
 	background-position: 0 0;
 }
 
+
 .description .shop {
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
 	font-weight: 500;
+}
+
+.description p {
+	position: relative;
+}
+
+.ice-cream::before,
+.eko::before,
+.ferm::before,
+.delivery::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+	background: url("../img/ice-cream.svg") no-repeat;
+}
+
+.eko::before{
+	background: url("../img/eco.svg") no-repeat;
+}
+
+.ferm::before{
+	background: url("../img/cow.svg") no-repeat;
+}
+
+.delivery::before{
+	background: url("../img/thermometer.svg") no-repeat;
 }
 
 .new {
@@ -286,6 +325,7 @@ a {
 .input {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: bold;
 		
 	background-color: #ffffff;
 	border: 1px solid #999999;
@@ -296,6 +336,7 @@ a {
 .input:focus {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: bold;
 		
 	background-color: #ffffff;
 	border: 2px solid #c7c6c5;
@@ -303,17 +344,14 @@ a {
  
 input::placeholder {
 	color: #999999;
+	font-weight: normal;
 }
 
 input::placeholder:hover,
 input::placeholder:focus {
 	color: #c7c6c5;
+	font-weight: normal;
 }
-/*
-input:{
-	color: #323232;
-	font-weight: bold;
-}*/
 
 .contacts{
 	background-color: #ffffff;
@@ -375,7 +413,6 @@ input:{
 .heart:hover .heart::before{
 	background: url("../img/heartR.svg") no-repeat;
 }
-/*...*/
 
 .copyright {
 	text-align: center;
@@ -478,8 +515,6 @@ input:{
 	background-color: #ffffff;
 }
 
-/*placeholder*/
-
 .enter-filter {
 	font-size: 16px;
 	line-height: 18px;
@@ -551,8 +586,8 @@ input:{
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.catalog p a,
-.hits p a {
+.catalog a,
+.hits a {
 	font: inherit;
 	font-weight: 500;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -613,7 +648,7 @@ input:{
 	background-repeat: no-repeat;
 	background-size: 17px;
 	background-position: 50% 50%;
-	text-indent: -1000px;
+	text-indent: -10000px;
 }
 
 .button-search:hover {
@@ -637,7 +672,8 @@ input:{
 	background-image: url("../img/entranceB.svg");
 }
 
-.button-basket, .button-basket2 {
+.button-basket, 
+.button-basket2 {
 	display: inline-block;
 	width: 117px;
 	height: 32px;
@@ -726,4 +762,42 @@ input:{
 	background-image: url("../img/vk3.svg");
 	border: 3px solid #dae2de;
 }
-.visually-hidden{display: none;}
+/*-----------------------------------------------------*/
+/*html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+body {
+  /* Временно для сетки *//*
+  background-image: url('../img/gllacy-index-1200.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+	display: flex;
+	padding: 10px 30px;
+	align-items: flex-start;
+}
+	
+.logo {
+	width: 170px;
+	height: 65px;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	
+	width: 100%;
+	padding: 0;
+	margin: 0;border: 1px solid;
+}
+
+.busy-hours {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+*/

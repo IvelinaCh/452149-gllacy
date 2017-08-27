@@ -10,7 +10,7 @@
   <body>
 	<header class="main-header">
 		<a class="logo">
-				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
+				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-navigation no-mark">
@@ -29,7 +29,7 @@
 				<li>
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<form class="search-form" method="get">
-						<label class="visually-hidden" for="search">Поиск</label>
+						<span class="visually-hidden">Поиск</span>
 						<input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
 					</form>
 				</li>
@@ -39,9 +39,9 @@
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
 							<p>
-								<label class="visually-hidden" for="mail">Электронная почта</label>
+								<span class="visually-hidden">Электронная почта</span>
 								<input class="input" type="email" id="mail" placeholder="Электронная почта"><br>
-								<label class="visually-hidden" for="password">Пароль</label>
+								<span class="visually-hidden">Пароль</span>
 								<input class="input" type="password" id="password" placeholder="Пароль"><br>
 							</p>
 							<button class="btn button" type="submit">Войти</button>
@@ -55,13 +55,14 @@
 				<li><a class="user-style button-basket" href="#">Пусто</a></li>
 			</ul>
 		</nav>
+		
+	</header>
+	<main class="container">
+		<h1 class="visually-hidden title">GllacyShop</h1>
 		<p class="busy-hours">
 			С 10 до 20, ежедневно<br>
 			<b>8 812 450-25-25</b>
 		</p>
-	</header>
-	<main class="container">
-		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
 			<ul class="carousel no-mark">
 				<li><img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
@@ -126,10 +127,10 @@
 		</section>
 		<section class="description">
 			<p class="shop">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-			<p class="ice-cream"><img class="svg" src="img/ice-cream.svg" width="49" height="49" alt="">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-			<p class="eko"><img class="svg" src="img/eco.svg" width="49" height="49" alt="">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-			<p class="ferm"><img class="svg" src="img/cow.svg" width="49" height="49" alt="">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
-			<p class="delivery"><img class="svg" src="img/thermometer.svg" width="49" height="49" alt="">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			<p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p class="eko">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			<p class="ferm">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
+			<p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 		</section>
 		<article class="new">
 			<h4 class="subcaption">Новое в нашем блоге</h4>
@@ -139,7 +140,7 @@
 			<h3 class="visually-hidden caption">Оформить подписку</h3>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription" method="get" action="https://echo.htmlacademy.ru">
-				<label class="visually-hidden" for="email">Электронная почта</label>
+				<span class="visually-hidden">Электронная почта</span>
 				<input class="input" type="email" id="email" placeholder="Электронная почта">
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
@@ -158,10 +159,10 @@
 	<footer class="main-footer">
 		<div class="social-div">
 			<ul class="social-list no-mark">
-				<li><a class="social social-tw" id="social-tw" href="#"></a><label class="visually-hidden" for="social-tw">Мы в твиттер</label></li>
-				<li><a class="social social-im" id="social-im" href="#"></a><label class="visually-hidden" for="social-im">Мы в инстаграм</label></li>
-				<li><a class="social social-fb" id="social-fb" href="#"></a><label class="visually-hidden" for="social-fb">Мы в фейсбук</label></li>
-				<li><a class="social social-vk" id="social-vk" href="#"></a><label class="visually-hidden" for="social-vk">Мы Вконтакте</label></li>
+				<li><a class="social social-tw" id="social-tw" href="#"></a><span class="visually-hidden">Мы в твиттер</span></li>
+				<li><a class="social social-im" id="social-im" href="#"></a><span class="visually-hidden">Мы в инстаграм</span></li>
+				<li><a class="social social-fb" id="social-fb" href="#"></a><span class="visually-hidden">Мы в фейсбук</span></li>
+				<li><a class="social social-vk" id="social-vk" href="#"></a><span class="visually-hidden">Мы Вконтакте</span></li>
 			</ul>
 		</div>
 		<div class="about-us">
@@ -178,15 +179,15 @@
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
-				<label class="visually-hidden" for="name">Как вас зовут?</label>
+				<span class="visually-hidden">Как вас зовут?</span>
 				<input class="input" type="text" id="name" placeholder="Как вас зовут?">
 			</p>
 			<p>
-				<label class="visually-hidden" for="y-mail">Ваша почта для ответа?</label>
+				<span class="visually-hidden">Ваша почта для ответа?</span>
 				<input class="input" type="email" id="y-mail" placeholder="Ваша почта для ответа?">
 			</p>
 			<p>
-				<label class="visually-hidden" for="comment">Текст письма</label>
+				<span class="visually-hidden">Текст письма</span>
 				<textarea class="input" name="comment" id="comment" rows="5">Напишите что-нибудь...</textarea>
 			</p>
 			<button class="btn button" type="submit">Отправить</button>
