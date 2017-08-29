@@ -50,6 +50,9 @@ a {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
+	margin: 0;
+	margin-bottom: 5px;
+	padding-top: 3px;
 }
 
 .main-navigation {
@@ -197,7 +200,7 @@ a {
 	text-align: center;
 		
 	background-color: #ea5239;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover,
@@ -286,7 +289,7 @@ a {
 .delivery::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -12px;
 	left: 0;
 	width: 49px;
 	height: 49px;
@@ -330,12 +333,23 @@ a {
 .subscription-fon{
 	margin: -15px;
 	background-color: #ffffff;
+	padding: 20px;
+}
+
+.subscription-fon p{
+	margin: 0;
+	margin-bottom: 38px;
+	padding-top: 9px;
 }
 
 .input {
+	width: 368px;
+	height: 41px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
+	
+	margin-right: 8px;
 		
 	background-color: #ffffff;
 	border: 1px solid #999999;
@@ -876,11 +890,23 @@ input::placeholder:focus {
 .present2,
 .new,
 .subscription {
+	position: relative;
 	margin: 0; 
 	padding: 20px;
 	width: 560px;
 	box-sizing: border-box;
-	
+}
+
+.new p {
+	width: 285px;
+	margin: 0;
+}
+
+.present .btn {
+	position: absolute;
+	padding: 11px 22px;
+	bottom: 23px;
+	right: 20px;
 }
 
 .hits-list{
@@ -894,12 +920,13 @@ input::placeholder:focus {
 .description {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 41px;
+	margin-bottom: 38px;
 	padding: 27px 20px;
 } 
 
 .shop {
 	margin: 0;
+	margin-bottom: 5px;
 	padding: 0;
 }
 
@@ -918,6 +945,23 @@ input::placeholder:focus {
 	min-height: 304px;
 	margin-left: auto;
 	margin-right: 27px;
+	padding: 20px;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+
+.contacts p {
+	margin: 0;
+	padding-top: 8px;
+}
+
+.tel {
+	margin-top: 15px;
+	margin-bottom: 32px;
+}
+
+.contacts .btn {
+	padding: 13px 30px;
 }
 
 .main-footer {
@@ -1038,8 +1082,20 @@ display: none
 .description-p{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .description-p p{
-	width: 50%;
-	}
+	width: 485px;
+	padding-left: 55px;
+	margin-bottom: 5px;
+}
+
+.subscription-form  .button {
+	padding: 12px 15px;
+	margin: 0;
+}
+
+.back {
+	transform: rotate(180deg);
+}
