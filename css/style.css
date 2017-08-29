@@ -895,7 +895,8 @@ input::placeholder:focus {
 
 .main-footer {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
+	justify-content: space-between;
 	width: 1146px;
 	margin: 0;
 	padding: 18px 27px 25px 27px;
@@ -919,17 +920,19 @@ input::placeholder:focus {
 }
 
 .about-us {
-	display: flex; 
+	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	width: 336px; 
+	justify-content: flex-start;
+	width: 305px; 
 	min-height: 46px; 
 	padding: 0;
-	margin-left: 215px;
-	margin-right: 230px;
 }
-	
+.about-us  li{
+	margin-right: 35px;
+}
+.about-us  li:nth-child(2n){
+	margin-right: 0;
+}
 .copyright {
 	display: flex; 
 	align-items: flex-end;
@@ -937,7 +940,8 @@ input::placeholder:focus {
 	width: 188px; 
 	height: 60px;
 	margin: 0;
-	padding:0; 
+	margin-top: -10px;
+	padding:0;
 	background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
 	background-size: 108px 39px;
 }
@@ -987,12 +991,11 @@ input::placeholder:focus {
 	width: 190px;
 	margin: 0; 
 	margin-bottom: 30px;
-	margin-right: -27px;
 	padding: 0;
 }
 
 .inner-page .main-footer {
-	border-top: 2px solid rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .catalog-list-item {
