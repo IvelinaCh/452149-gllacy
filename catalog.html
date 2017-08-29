@@ -27,14 +27,14 @@
 				<li><a class="main-menu-li" href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation no-mark">
-				<li>
+				<li class="user-navigation-li">
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<form class="search-form" method="get">
 						<span class="visually-hidden">Поиск</span>
 						<input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
 					</form>
 				</li>
-				<li>
+				<li class="user-navigation-li">
 					<a class="user-style button-entrance" href="#">Вход</a>
 					<section class="login">
 						<h3 class="visually-hidden caption">Авторизация</h3>
@@ -53,7 +53,7 @@
 							</p>
 					</section>
 				</li>
-				<li><a class="user-style2  button-basket2" href="#">2 товара</a>
+				<li class="user-navigation-li"><a class="user-style2  button-basket2" href="#">2 товара</a>
 					<section class="busket">
 						<h3 class="visually-hidden caption">Содержимое корзины</h3>
 						<form class="busket-form" method="get">
@@ -97,26 +97,24 @@
 		
 		<h1 class="title">Сливочное мороженое</h1>
 		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-			<label>Сортировка:
-				<select>
+			<label class="form-list" for="form-list">Сортировка:</label>
+				<select class="form-list-select" id="form-list">
 					<option>по популярности</option>
 					<option>сначала недорогие</option>
 					<option>сначала дорогие</option>
 					<option>по жирности</option>
 				</select>
-			</label>
-			<label>Цена: 100руб. - 500руб.
-				<input type="range" min="100" max="500" step="10" value="350">
-			</label>
-			<span class="hit">Жирность:</span>
-				<ul id="hit" class="fat-radio-list no-mark">
+			<label class="range" for="price-range">Цена: </label><span class="diapason-price">100руб. - 500руб.</span>
+				<input class="input-range" type="range" id="price-range" min="100" max="500" step="10" value="350">
+			<label class="fat" for="fat-list">Жирность:</label>
+				<ul id="fat-list" class="fat-radio-list no-mark">
 					<li><label><input type="radio" class="visually-hidden" name="fat" value="0%">0%</label></li>
 					<li><label><input type="radio" class="visually-hidden" name="fat" value="до 10%">до 10%</label></li>
 					<li><label><input type="radio" class="visually-hidden" name="fat" value="до 30%">до 30%</label></li>
 					<li><label><input type="radio" class="visually-hidden" name="fat" value="выше 30%">выше 30%</label></li>
 				</ul>
-			<span class="topping">Наполнители:</span>
-				<ul id="topping" class="topping-list no-mark">
+			<label class="topping" for="topping-list">Наполнители:</label>
+				<ul id="topping-list" class="topping-list no-mark">
 					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="chokolad">шоколадные</label></li>
 					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="sugar">сахарные присыпки</label></li>
 					<li><label><input type="checkbox" class="visually-hidden" name="topping" value="fruit">фрукты</label></li>
@@ -228,7 +226,9 @@
 				<li><a href="#">Экологические стандарты</a></li>
 			</ul>
 		</div>
-		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+		<p class="copyright">
+		<!--<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">-->
+		Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
   </body>
 </html>
