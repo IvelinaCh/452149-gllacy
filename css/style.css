@@ -2,6 +2,8 @@
 	padding: 0;
 	margin: 0;
 	
+	min-width: 1200px;
+	
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -318,10 +320,16 @@ a {
 }
 
 .subscription {
+	display: flex;
 	font: inherit;
 	color: #5a5a5a;
 	
 	background: #ffffff url("../img/bg-post.svg") no-repeat 0 0;
+}
+
+.subscription-fon{
+	margin: -15px;
+	background-color: #ffffff;
 }
 
 .input {
@@ -418,10 +426,16 @@ input::placeholder:focus {
 }*/
 
 .copyright {
-	text-align: center;
+	text-align: center; 
 	font-size: 12px;
 	line-height: 18px;
 	color: #ffffff;
+}
+
+.copyright img {
+	display: block;
+	margin: 2px; 
+	margin-top: -13px;
 }
 
 .copyright a {
@@ -579,14 +593,16 @@ input::placeholder:focus {
 	font-size: 45px;
 	line-height: 45px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	
-	padding: 0;
-	margin-left: -95px;
+}
+
+.kg {
+	font-size: 30px;
+	line-height: 30px;
 }
 
 .currency {
-	font-size: 45px;
-	line-height: 45px;
+	font-size: 40px;
+	line-height: 40px;
 	font-weight: 500;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -597,6 +613,11 @@ input::placeholder:focus {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.catalog-list-item p {
+	padding-top: 10px;
+	text-align: center;
+}
+
 .catalog,
 .hits {
 	text-align: center;
@@ -604,12 +625,12 @@ input::placeholder:focus {
 
 .hit-list {
 	display: flex;
-	}
+}
 
 .catalog-list-item {
 	position: relative;
-	text-align: center;
-	}
+	text-align: left;
+}
 
 .hits-list li::after {
 	content: "";
@@ -635,6 +656,7 @@ input::placeholder:focus {
 .catalog-list img,
 .hits-list img {
 	border-radius: 50%;
+	margin-bottom: -63px;
 }
 
 .svg {
@@ -789,7 +811,7 @@ input::placeholder:focus {
 	margin: 0;
 }
 
-.site-navigation {background-color: blue;
+.site-navigation {
 	display: flex;
 	padding: 0;
 	margin: 0;
@@ -799,9 +821,9 @@ input::placeholder:focus {
 .main-menu-li {
 	margin-right: 30px;
 }
-	
+	/*
 		.main-menu-li:last-child {
-			margin-right: 0;}
+			margin-right: 0;}*/
 			
 .user-navigation-li{
 	margin-left: 10px;
@@ -839,7 +861,7 @@ input::placeholder:focus {
 .present-variant,
 .news {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	min-height: 229px;
 	margin: 0;
 	padding: 0;
@@ -857,6 +879,7 @@ input::placeholder:focus {
 	margin: 0; 
 	padding: 20px;
 	width: 560px;
+	box-sizing: border-box;
 	
 }
 
@@ -865,14 +888,14 @@ input::placeholder:focus {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 40px;
+	margin-bottom: 24px;
 }
 
 .description {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 40px;
-	padding: 25px;
+	margin-bottom: 41px;
+	padding: 27px 20px;
 } 
 
 .shop {
@@ -888,7 +911,6 @@ input::placeholder:focus {
 	margin: 0;
 	margin-left: -27px;
 	background: url("../img/map1.jpg") no-repeat 50% 50%;
-	
 }
 
 .contacts {
@@ -904,7 +926,7 @@ input::placeholder:focus {
 	justify-content: space-between;
 	width: 1146px;
 	margin: 0;
-	padding: 15px 27px 25px 27px;
+	padding: 16px 27px 25px 27px;
 }
 
 .social-list {
@@ -919,6 +941,11 @@ input::placeholder:focus {
 	margin-right: 11px; 
 	margin-top: 7px;
 }
+/*
+.social:last-child a { 
+display: none 
+}
+*/
 
 .social-vk {
 	margin-right: 0;
@@ -938,16 +965,9 @@ input::placeholder:focus {
 }
 
 .copyright {
-	display: flex; 
-	align-items: flex-end;
-	justify-content: space-between;
-	width: 188px; 
-	height: 60px;
+	width: 191px; 
 	margin: 0;
-	margin-top: -10px;
 	padding:0;
-	background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
-	background-size: 108px 39px;
 }
 
 .breadcrambs {
@@ -957,7 +977,7 @@ input::placeholder:focus {
 	padding: 0;
 }
 
-.filter {
+.filter {background-color: green;
 	display: flex; 
 	flex-wrap: wrap;
 	/*width: 861px;*/ 
@@ -985,7 +1005,7 @@ input::placeholder:focus {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 40px; /*80px;*/
+	margin-bottom: 45px;
 }
 
 .paginator {
@@ -1004,22 +1024,22 @@ input::placeholder:focus {
 
 .catalog-list-item {
 	width: 267px;
-	/*height: 324px;/*283px; надо поднять текст на 40px*/
-	margin-bottom: 40px;
 	margin-right: 0px;
-	
-	padding-top: 210px;
-}
-
-.catalog-list-item img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
 }
 
 .catalog-list-item:nth-child(4n) {
 	margin-right: 0;
 }
 
-.description{height: 257px;}
+.catalog-list .catalog-list-item {
+	margin-bottom: 20px;
+}
+
+.description-p{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.description-p p{
+	width: 50%;
+	}

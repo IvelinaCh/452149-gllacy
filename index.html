@@ -100,25 +100,25 @@
 			<ul class="hits-list no-mark">
 				<li class="catalog-list-item">
 					<img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-					<b>310<span class="currency">₽</span>/кг</b>
+					<b>310<span class="currency">₽</span><span class="kg">/кг</span></b>
 					<p><a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-list-item">
 					<img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное">
-					<b>380<span class="currency">₽</span>/кг</b>
+					<b>380<span class="currency">₽</span><span class="kg">/кг</span></b>
 					<p><a>Сливочно-кофейное с кусочками шоколада</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-list-item">
 					<img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-					<b>355<span class="currency">₽</span>/кг</b>
+					<b>355<span class="currency">₽</span><span class="kg">/кг</span></b>
 					<p><a>Сливочно-клубничное с присыпкой из белого шоколала</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-list-item">
 					<img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-					<b>415<span class="currency">₽</span>/кг</b>
+					<b>415<span class="currency">₽</span><span class="kg">/кг</span></b>
 					<p><a>Сливочное крем-брюле с карамельной подливкой</a></p>
 					<a class="btn item" href="#">Быстрый просмотр</a>
 				</li>
@@ -126,10 +126,11 @@
 		</section>
 		<section class="description">
 			<p class="shop">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-			<p class="ice-cream description-p">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-			<p class="eko description-p">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-			<p class="ferm description-p">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
-			<p class="delivery description-p">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			<div class="description-p"><p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p class="eko">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			<p class="ferm">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний. с которыми нас связывает долговременное сотрудничество.</p>
+			<p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			</div>
 		</section>
 		<div class="news">
 		<article class="new">
@@ -137,13 +138,15 @@
 			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 		</article>
 		<section class="subscription">
-			<h3 class="visually-hidden caption">Оформить подписку</h3>
+			<h3 class="visually-hidden">Оформить подписку</h3>
+			<div class="subscription-fon">
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
 				<span class="visually-hidden">Электронная почта</span>
 				<input class="input" type="email" id="email" placeholder="Электронная почта">
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
+			</div>
 		</section>
 		</div>
 		<div class="maps-contacts">
@@ -175,7 +178,7 @@
 				<li><a href="#">О производстве</a></li>
 				<li><a href="#">Экологические стандарты</a></li>
 			</ul>
-		<p class="copyright"><!--<img src="img/logo-htmlacademy.svg" width="108" height="39" alt=""><br>-->
+		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">
 		Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
 	<section class="connection">
