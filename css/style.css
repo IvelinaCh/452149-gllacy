@@ -579,6 +579,9 @@ input::placeholder:focus {
 	font-size: 45px;
 	line-height: 45px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	
+	padding: 0;
+	margin-left: -95px;
 }
 
 .currency {
@@ -603,7 +606,7 @@ input::placeholder:focus {
 	display: flex;
 	}
 
-.hits-list li {
+.catalog-list-item {
 	position: relative;
 	text-align: center;
 	}
@@ -786,7 +789,7 @@ input::placeholder:focus {
 	margin: 0;
 }
 
-.site-navigation {
+.site-navigation {background-color: blue;
 	display: flex;
 	padding: 0;
 	margin: 0;
@@ -797,8 +800,8 @@ input::placeholder:focus {
 	margin-right: 30px;
 }
 	
-		/*.main-menu-li:last-child {
-			margin-right: 0;}*/
+		.main-menu-li:last-child {
+			margin-right: 0;}
 			
 .user-navigation-li{
 	margin-left: 10px;
@@ -912,7 +915,7 @@ input::placeholder:focus {
 	margin: 0;
 }
 
-.social {
+.social { 
 	margin-right: 11px; 
 	margin-top: 7px;
 }
@@ -1001,9 +1004,18 @@ input::placeholder:focus {
 
 .catalog-list-item {
 	width: 267px;
-	height: 324px;/*283px; надо поднять текст на 40px*/
+	/*height: 324px;/*283px; надо поднять текст на 40px*/
 	margin-bottom: 40px;
 	margin-right: 0px;
+	
+	padding-top: 210px;
+}
+
+.catalog-list-item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 .catalog-list-item:nth-child(4n) {
