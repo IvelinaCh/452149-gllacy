@@ -21,8 +21,7 @@ a {
 .login,
 .connection,
 .busket,
-.visually-hidden,
-.item {
+.visually-hidden{
 	display: none;
 }
 
@@ -226,18 +225,18 @@ a {
 	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.poster .btn:hover,
-.poster .btn:focus{
+.poster .btn-carousel:hover,
+.poster .btn-carousel:focus{
 	font-size: 32px;
 	line-height: 44px;
 }
 
-.poster .btn:active  {
+.poster .btn-carousel:active  {
 	font-size: 32px;
 	line-height: 44px;
 }
 
-.poster .btn {
+.poster .btn-carousel {
 	font-size: 32px;
 	line-height: 44px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -367,12 +366,14 @@ a {
 }
  
 input::placeholder {
+	padding-left: 15px;
 	color: #999999;
 	font-weight: normal;
 }
 
 input::placeholder:hover,
 input::placeholder:focus {
+	padding-left: 15px;
 	color: #c7c6c5;
 	font-weight: normal;
 }
@@ -515,7 +516,7 @@ input::placeholder:focus {
 
 .breadcrambs .current-breadcrambs {
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 22px;
 	color: #ffffff;
 }
 
@@ -531,14 +532,14 @@ input::placeholder:focus {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+	padding: 13px;
+	padding-left: 45px;
 	
 	background-color: #a9b9af;
 }
 
 .filter select:hover,
-.filter select:focus,
-.filter li:hover,
-.filter li:focus {
+.filter select:focus {
 	font-size: 16px;
 	line-height: 18px;
 	color: #323232;
@@ -550,6 +551,7 @@ input::placeholder:focus {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+	padding: 10px 30px;
 	
 	background-color: #9cb0a4;
 	border: 2px solid #ffffff;
@@ -575,7 +577,14 @@ input::placeholder:focus {
 	outline: none;
 	border: none;
 }
-
+/*
+.form-list-select,
+.range,
+.fat-list,
+.topping-list {
+	padding: 
+}
+*/
 .paginator a{
 	font-size: 16px;
 	line-height: 18px;
@@ -656,9 +665,24 @@ input::placeholder:focus {
 	background-image: url("../img/hit.svg");
 }
 
+.item  {
+	display: none;
+	position: absolute;
+	bottom: -45px;
+	left: 33px;
+	padding: 13px 16px;
+	z-index: 2;
+}
+
 .catalog-list-item:hover,
 .catalog-list-item:focus {
 	background-color: rgba(255, 255, 255, 0.1) ;
+	box-shadow: 0 6px 0 13px  rgba(255, 255, 255, 0.1);
+}
+
+.catalog-list-item:hover .item,
+.catalog-list-item:focus .item {
+	display: block;
 }
 
 .catalog-list-item:hover .currency,
@@ -1024,6 +1048,7 @@ display: none
 .filter {background-color: green;
 	display: flex; 
 	flex-wrap: wrap;
+	align-content: center;
 	/*width: 861px;*/ 
 	min-height: 133px;
 	margin: 0;
@@ -1058,7 +1083,7 @@ display: none
 	float: right;
 	width: 190px;
 	margin: 0; 
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 	padding: 0;
 }
 
@@ -1076,7 +1101,7 @@ display: none
 }
 
 .catalog-list .catalog-list-item {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .description-p{
@@ -1099,3 +1124,42 @@ display: none
 .back {
 	transform: rotate(180deg);
 }
+
+.fat-radio-list label,
+.topping-list label {
+	position: relative;
+}
+
+.fat-radio-list label::after,
+.topping-list label::after {
+	content: "";
+	position: absolute;
+	background: url("../img/radio-off.svg") no-repeat;
+	top: 6px;
+	left: -30px;
+	width: 24px;
+	height: 24px;
+	opacity: 1;
+}
+
+.topping-list label::after {
+	background: url("../img/checkbox-off.svg") no-repeat;
+	top: 10px;
+}
+
+.fat-radio-list .checked-label::after{
+	background: url("../img/radio-on.svg") no-repeat;
+}
+
+.topping-list .checked-label::after {
+	background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.fat-radio-list label:hover,
+.fat-radio-list label:focus,
+.topping-list label:hover,
+.topping-list label:hover {
+	opacity: 0.5;
+}
+
+
