@@ -532,10 +532,14 @@ input::placeholder:focus {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
-	padding: 13px;
+	padding: 10px;
 	padding-left: 45px;
 	
 	background-color: #a9b9af;
+}
+
+.filter select {
+	padding: 10px;
 }
 
 .filter select:hover,
@@ -551,7 +555,8 @@ input::placeholder:focus {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
-	padding: 10px 30px;
+	padding: 8px 30px;
+	/*margin: 0;*/
 	
 	background-color: #9cb0a4;
 	border: 2px solid #ffffff;
@@ -1045,27 +1050,36 @@ display: none
 	padding: 0;
 }
 
-.filter {background-color: green;
+.filter {
 	display: flex; 
 	flex-wrap: wrap;
-	align-content: center;
-	/*width: 861px;*/ 
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: space-around;
+	width: 861px;
 	min-height: 133px;
 	margin: 0;
 	padding: 0;
-	margin-top: 21px;
-	margin-bottom: 40px;
+	margin-top: 19px;
+	margin-bottom: 38px;
 }
 
 .filter label { 
 	margin: 0;
-	padding: 10px;
+	padding: 7px 15px;
+}
+
+.fat-radio-list label,
+.topping-list label { 
+	margin: 0;
+	padding: 0;
 }
 
 .fat-radio-list,
 .topping-list {
 	display: flex; 
-	padding: 12px 15px;
+	padding: 0;
+	margin: 0;
 }
 
 .catalog-list  {
@@ -1074,7 +1088,7 @@ display: none
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 
 .paginator {
@@ -1083,12 +1097,16 @@ display: none
 	float: right;
 	width: 190px;
 	margin: 0; 
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	padding: 0;
 }
 
 .inner-page .main-footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.inner-page .main-header {
+	margin-bottom: 3px;
 }
 
 .catalog-list-item {
@@ -1135,16 +1153,16 @@ display: none
 	content: "";
 	position: absolute;
 	background: url("../img/radio-off.svg") no-repeat;
-	top: 6px;
-	left: -30px;
-	width: 24px;
-	height: 24px;
+	top: -3px;
+	left: -33px;
+	width: 25px;
+	height: 25px;
 	opacity: 1;
 }
 
 .topping-list label::after {
 	background: url("../img/checkbox-off.svg") no-repeat;
-	top: 10px;
+	top: 0;
 }
 
 .fat-radio-list .checked-label::after{
@@ -1162,4 +1180,11 @@ display: none
 	opacity: 0.5;
 }
 
+.filter-block {
+	display: flex;
+	flex-direction: column;
+}
 
+.filter-block .topping {
+	padding-top: 12px;
+}
