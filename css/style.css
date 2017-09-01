@@ -67,7 +67,9 @@ a {
 .site-navigation  .main-menu-li {
 	color: #ffffff;
 	font-weight: bold;
+	padding: 5px 15px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
 }
 
 .site-navigation .main-menu-li:hover,
@@ -88,7 +90,7 @@ a {
 	color: #ffffff;
 	
 	background-color: #d07058;
-	border: 0;
+	border: none;
 }
 
 .popup-list {
@@ -197,7 +199,7 @@ a {
 	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
-		
+	border-radius: 25px;	
 	background-color: #ea5239;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -244,6 +246,7 @@ a {
 
 .button {
 	border: none;
+	border-radius: 20px;
 }
 
 .present p {
@@ -333,6 +336,7 @@ a {
 	margin: -15px;
 	background-color: #ffffff;
 	padding: 20px;
+	border-radius: 15px;
 }
 
 .subscription-fon p{
@@ -342,16 +346,17 @@ a {
 }
 
 .input {
-	width: 368px;
+	position: relative;
+	width: 353px;
 	height: 41px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
-	
+	padding-left: 15px;
 	margin-right: 8px;
-		
 	background-color: #ffffff;
 	border: 1px solid #999999;
+	border-radius: 5px;
 }
 
 
@@ -362,11 +367,12 @@ a {
 	font-weight: bold;
 		
 	background-color: #ffffff;
-	border: 2px solid #c7c6c5;
+	/*border: 2px solid #c7c6c5;*/
+	box-shadow: 0 0 0 1px #c7c6c5;
 }
  
 input::placeholder {
-	padding-left: 15px;
+	/*padding-left: 15px;*/
 	color: #999999;
 	font-weight: normal;
 }
@@ -376,6 +382,19 @@ input::placeholder:focus {
 	padding-left: 15px;
 	color: #c7c6c5;
 	font-weight: normal;
+}
+
+
+.input:active .place-label {
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	background-color: green;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+	font-size: 54px;
 }
 
 .contacts{
@@ -539,7 +558,8 @@ input::placeholder:focus {
 }
 
 .filter select {
-	padding: 10px;
+	padding: 10px;	
+	border-radius: 20px;
 }
 
 .filter select:hover,
@@ -551,13 +571,13 @@ input::placeholder:focus {
 	background-color: #ffffff;
 }
 
-.enter-filter {
+.enter-filter { 
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 	padding: 8px 30px;
 	/*margin: 0;*/
-	
+	border-radius: 20px;
 	background-color: #9cb0a4;
 	border: 2px solid #ffffff;
 }
@@ -595,6 +615,8 @@ input::placeholder:focus {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 500;
+	padding: 3px 8px;
+	border-radius: 50%;
 }
 
 .paginator a:hover,
@@ -727,7 +749,7 @@ input::placeholder:focus {
 	height: 32px;
 	padding: 8px 45px;
 	box-sizing: border-box;
-	
+	border-radius: 20px;
 	background-image: url("../img/entrance.svg");
 	background-repeat: no-repeat;
 	background-size: 21px 19px;
@@ -745,7 +767,7 @@ input::placeholder:focus {
 	height: 32px;
 	padding: 8px 40px;
 	box-sizing: border-box;
-	
+	border-radius: 20px;
 	background-image: url("../img/basket.svg");
 	background-repeat: no-repeat;
 	background-size: 21px 20px;
@@ -858,11 +880,11 @@ input::placeholder:focus {
 	display: flex;
 	padding: 0;
 	margin: 0;
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 }
-
+/*
 .main-menu-li {
-	margin-right: 30px;
+	margin-right: 15px;
 }
 	/*
 		.main-menu-li:last-child {
@@ -924,6 +946,7 @@ input::placeholder:focus {
 	padding: 20px;
 	width: 560px;
 	box-sizing: border-box;
+	border-radius: 15px;
 }
 
 .new p {
@@ -951,6 +974,7 @@ input::placeholder:focus {
 	flex-direction: column;
 	margin-bottom: 38px;
 	padding: 27px 20px;
+	border-radius: 15px;
 } 
 
 .shop {
@@ -977,6 +1001,7 @@ input::placeholder:focus {
 	padding: 20px;
 	padding-left: 25px;
 	box-sizing: border-box;
+	border-radius: 15px;
 }
 
 .contacts p {
@@ -1079,7 +1104,8 @@ display: none
 .topping-list {
 	display: flex; 
 	padding: 0;
-	margin: 0;
+	margin: 0;/*
+	border-radius: 20px;*/
 }
 
 .catalog-list  {
@@ -1088,7 +1114,7 @@ display: none
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .paginator {
@@ -1179,12 +1205,16 @@ display: none
 .topping-list label:hover {
 	opacity: 0.5;
 }
-
+/*
+input:disabled {
+	opacity: 0.1;
+}
+*/
 .filter-block {
 	display: flex;
 	flex-direction: column;
 }
-
+/*
 .filter-block .topping {
-	padding-top: 12px;
+	padding-top: 15px;
 }
