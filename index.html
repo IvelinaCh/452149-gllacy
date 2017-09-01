@@ -29,8 +29,8 @@
 				<li class="user-navigation-li">
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<form class="search-form" method="get">
-						<span class="visually-hidden">Поиск</span>
 						<input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
+						<div class="place-label"><span class="visually-hidden">Что ищем?</span></div>
 					</form>
 				</li>
 				<li class="user-navigation-li">
@@ -39,10 +39,10 @@
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
 							<p>
-								<span class="visually-hidden">Электронная почта</span>
 								<input class="input" type="email" id="mail" placeholder="Электронная почта"><br>
-								<span class="visually-hidden">Пароль</span>
+								<div class="place-label"><span class="visually-hidden">Электронная почта</span></div>
 								<input class="input" type="password" id="password" placeholder="Пароль"><br>
+								<div class="place-label"><span class="visually-hidden">Пароль</span></div>
 							</p>
 							<button class="btn button" type="submit">Войти</button>
 						</form>
@@ -142,8 +142,8 @@
 			<div class="subscription-fon">
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
-				<span class="visually-hidden place-label">Электронная почта</span>
 				<input class="input" type="email" id="email" placeholder="Электронная почта">
+				<span class="place-label">Электронная почта</span>
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
 			</div>
@@ -187,16 +187,16 @@
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
-				<span class="visually-hidden place-label">Как вас зовут?</span>
 				<input class="input" type="text" id="name" placeholder="Как вас зовут?">
+				<div class="place-label"><span class="visually-hidden">Как вас зовут?</span></div>
 			</p>
 			<p>
-				<span class="visually-hidden place-label">Ваша почта для ответа?</span>
 				<input class="input" type="email" id="y-mail" placeholder="Ваша почта для ответа?">
+				<div class="place-label"><span class="visually-hidden">Ваша почта для ответа?</span></div>
 			</p>
 			<p>
-				<span class="visually-hidden place-label">Текст письма</span>
 				<textarea class="input" name="comment" id="comment" rows="5">Напишите что-нибудь...</textarea>
+				<div class="place-label"><span class="visually-hidden">Текст письма</span></div>
 			</p>
 			<button class="btn button" type="submit">Отправить</button>
 		</form>
