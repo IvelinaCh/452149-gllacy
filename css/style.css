@@ -16,11 +16,11 @@ a {
 	text-decoration: none;
 }
 
-/*.popup-list,
+.popup-list,
 .search-form,
 .login,
 .connection,
-.busket,*/
+.busket,
 .visually-hidden {
 	display: none;
 }
@@ -37,6 +37,8 @@ a {
 .caption, 
 .subcaption {
 	color: #323232;
+	margin: 0;
+	margin-bottom: 5px;
  }
 
  .caption {
@@ -49,12 +51,11 @@ a {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-	margin: 0;
-	margin-bottom: 5px;
 	padding-top: 3px;
 }
 
 .main-navigation {
+	position: relative;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -100,9 +101,11 @@ a {
 }
 
 .popup-list {
-	position: relative;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
+	top: 55px;
+	left: 155px;
 	width: 142px;
 	background: #ffffff;
 	margin: 0;
@@ -110,6 +113,7 @@ a {
 	box-sizing: border-box;
 	border-radius: 5px;
 	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.5);
+	z-index: 3;
 }
 
 .popup-list::after {
@@ -124,11 +128,11 @@ a {
 }
 
 .popup-list li {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .popup-list li:first-child {
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .popup-list a {
@@ -185,13 +189,20 @@ a {
 }
 
 .search-form,
-.login {
+.login,
+.busket-form,
+.connection {
+	position: absolute;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.5);
+	z-index: 3;
 }
 
 .search-form {
+	position: absolute;
+	top: 55px;
+	right: 230px;
 	padding: 20px 15px 20px 15px;
 }
 
@@ -245,6 +256,71 @@ a {
 	color: #ffbc9e;
 	text-decoration: underline;
  }
+ 
+.busket {
+	position: absolute;
+	top: 55px;
+	right: 540px;
+}
+ 
+.busket-list {
+	width: 540px;
+	padding: 10px;
+}
+
+.busket-list td {
+	padding: 10px;
+}
+
+.td-price-ice {
+	white-space: nowrap;
+}
+
+.busket-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.busket-form .button{
+	margin: -10px 15px 20px auto;
+	padding: 15px 25px;
+	border-radius: 25px;
+}
+
+.connection {
+	top: 75%;
+	left: 25%;
+	padding: 20px;
+}
+
+.connection  .input {
+	width: 265px;
+}
+
+.connection .input-area {
+	width: 430px;
+	min-height: 155px;
+	margin-bottom: 45px;
+}
+
+.close,
+.del {
+	border: none;
+	background-color: transparent;
+}
+
+.connection  .btn {
+	position: absolute;
+	padding: 11px 22px;
+	bottom: 23px;
+	right: 20px;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
 
 .busy-hours {
 	font-size: 14px;
@@ -1406,3 +1482,27 @@ display: none
 	left: 140px;
 }
 
+.popup-list,
+.search-form,
+.login,
+.connection,
+.busket,
+.visually-hidden {
+	display: none;
+}
+
+.main-menu-pt:first-child:hover .popup-list {
+	display: block;
+}
+
+.user-navigation-li:first-child:hover .search-form {
+	display: block;
+}
+
+.user-navigation-li:nth-child(2):hover .login {
+	display: block;
+}
+
+.user-navigation-li:last-child:hover .busket {
+	display: block;
+}
