@@ -111,7 +111,7 @@ a {
 	left: 155px;
 	width: 142px;
 	margin: 0;
-	padding: 15px 20px 5px;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -127,11 +127,15 @@ a {
 }
 
 .popup-list li {
-	margin-bottom: 10px;
+	padding: 5px 20px;
 }
 
 .popup-list li:first-child {
-	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+
+.popup-list li:last-child {
+	padding-bottom: 15px;
 }
 
 .popup-list a {
@@ -1135,7 +1139,7 @@ input::placeholder:focus {
 /*
 .carousel {display: none;}
 
-#slide1:checked ~ .wraper.carousel-pt {
+#slide1:checked ~ .carousel-pt {
 	display: block;
 }
 */
