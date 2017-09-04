@@ -8,7 +8,10 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-	<div class="wraper">
+	<div class="wrapper">
+		<input type="radio" id="slide1" class="visually-hidden" name="slide" checked>
+		<input type="radio" id="slide2" class="visually-hidden" name="slide">
+		<input type="radio" id="slide3" class="visually-hidden" name="slide">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="logo">
@@ -65,13 +68,8 @@
 	<main class="container">
 		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
-			<div class="slider">
-				<input type="radio" id="slide1" class="visually-hidden" name="slide" checked><label class="slider-label" for="slide1">Слайд1</label>
-				<input type="radio" id="slide2" class="visually-hidden" name="slide"><label class="slider-label" for="slide2">Слайд2</label>
-				<input type="radio" id="slide3" class="visually-hidden" name="slide"><label class="slider-label" for="slide3">Слайд3</label>
-			</div>
 			<ul class="carousel no-mark">
-				<li class="carousel-pt">
+				<li class="carousel-pt" id="id">
 				<!--<img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">-->
 				<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
 				<a class="btn btn-carousel" href="#">Давайте оба!</a>
@@ -87,6 +85,11 @@
 				<a class="btn btn-carousel" href="#">Давайте оба!</a>
 				</li>
 			</ul>
+			<div class="slider">
+				<label class="slider-label" for="slide1">Слайд1</label>
+				<label class="slider-label" for="slide2">Слайд2</label>
+				<label class="slider-label" for="slide3">Слайд3</label>
+		</div>
 		</div>
 		<section class="present">
 			<ul class="present-variant no-mark">
