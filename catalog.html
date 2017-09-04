@@ -15,7 +15,7 @@
 			</a>
 			<ul class="site-navigation no-mark">
 				<li class="main-menu-pt current-page"><a class="main-menu-li">Каталог</a>
-					<ul class="popup-list no-mark">
+					<ul class="popup-list no-mark modal">
 						<li><a href="#"><b>Новинки</b></a></li>
 						<li><a href="#">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
@@ -29,32 +29,32 @@
 			<ul class="user-navigation no-mark">
 				<li class="user-navigation-li">
 					<button class="user-style button button-search" type="button">Поиск</button>
-					<form class="search-form" method="get">
+					<form class="search-form modal" method="get">
 						<input class="input" type="search" id="search" name="search">
 						<label class="place-label" for="search">Что ищем?</label>
 					</form>
 				</li>
 				<li class="user-navigation-li">
 					<a class="user-style button-entrance" href="#">Вход</a>
-					<section class="login">
+					<section class="login modal">
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
-							<p>
+							<div>
 								<input class="input" type="email" id="mail"><br>
 								<label class="place-label" for="mail">Электронная почта</label>
 								<input class="input" type="password" id="password"><br>
 								<label class="place-label" for="password">Пароль</label>
-							</p>
+							</div>
 							<button class="btn button" type="submit">Войти</button>
-						</form>
 							<p>
 								<a class="forget" href="#">Забыли пароль?</a><br>
 								<a class="new-reg" href="#">Новая регистрация</a>
 							</p>
+						</form>
 					</section>
 				</li>
 				<li class="user-navigation-li"><a class="user-style2  button-basket2" href="#">2 товара</a>
-					<section class="busket">
+					<section class="busket modal">
 						<h3 class="visually-hidden caption">Содержимое корзины</h3>
 						<form class="busket-form" method="get">
 							<table class="busket-list" >
@@ -118,7 +118,8 @@
 			</div>
 			<div class="filter-block block-range">
 			<label class="range" for="price-range">Цена: 100руб. - 500руб.</label>
-				<span class="block-range-fon"></span>
+				<span class="block-range-start"></span>
+				<span class="block-range-end"></span>
 				<!--<input class="input-range" type="range" id="price-range" min="100" max="500" step="10" value="350">-->
 			</div>
 			<div class="filter-block">

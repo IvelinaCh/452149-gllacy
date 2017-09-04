@@ -8,6 +8,7 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+	<div class="wraper">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="logo">
@@ -15,7 +16,7 @@
 			</a>
 			<ul class="site-navigation no-mark">
 				<li class="main-menu-pt"><a class="main-menu-li" href="catalog.html">Каталог</a>
-					<ul class="popup-list no-mark">
+					<ul class="popup-list no-mark modal">
 						<li><a href="#"><b>Новинки</b></a></li>
 						<li><a href="#">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
@@ -29,28 +30,28 @@
 			<ul class="user-navigation no-mark">
 				<li class="user-navigation-li">
 					<button class="user-style button button-search" type="button">Поиск</button>
-					<form class="search-form" method="get">
+					<form class="search-form modal" method="get">
 						<input class="input" type="search" id="search" name="search">
 						<label class="place-label" for="search">Что ищем?</label>
 					</form>
 				</li>
 				<li class="user-navigation-li">
 					<a class="user-style button-entrance" href="#">Вход</a>
-					<section class="login">
+					<section class="login modal">
 						<h3 class="visually-hidden caption">Авторизация</h3>
 						<form class="login-form" method="get">
-							<p>
+							<div>
 								<input class="input" type="email" id="mail"><br>
 								<label class="place-label" for="mail">Электронная почта</label>
 								<input class="input" type="password" id="password"><br>
 								<label class="place-label" for="password">Пароль</label>
-							</p>
+							</div>
 							<button class="btn button" type="submit">Войти</button>
-						</form>
 							<p>
 								<a class="forget" href="#">Забыли пароль?</a><br>
 								<a class="new-reg" href="#">Новая регистрация</a>
 							</p>
+						</form>
 					</section>
 				</li>
 				<li class="user-navigation-li"><a class="user-style button-basket" href="#">Пусто</a></li>
@@ -64,22 +65,28 @@
 	<main class="container">
 		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
-			<ul class="carousel no-mark">
-				<li><img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
-				<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
-				<a class="btn-carousel" href="#">Давайте оба!</a></li>
-				<li><img src="img/carousel2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
-				<p>Шоколадный пломбир <br>и лимонный сорбет</p>
-				<a class="btn-carousel" href="#">Давайте оба!</a></li>
-				<li><img src="img/carousel3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
-				<p>Пломбир с помадкой <br>и клубничный щербет</p>
-				<a class="btn-carousel" href="#">Давайте оба!</a></li>
-			</ul>
 			<div class="slider">
-				<label><input type="radio" class="visually-hidden" name="slide">Слайд1</label>
-				<label><input type="radio" class="visually-hidden" name="slide">Слайд2</label>
-				<label><input type="radio" class="visually-hidden" name="slide">Слайд3</label>
+				<input type="radio" id="slide1" class="visually-hidden" name="slide" checked><label class="slider-label" for="slide1">Слайд1</label>
+				<input type="radio" id="slide2" class="visually-hidden" name="slide"><label class="slider-label" for="slide2">Слайд2</label>
+				<input type="radio" id="slide3" class="visually-hidden" name="slide"><label class="slider-label" for="slide3">Слайд3</label>
 			</div>
+			<ul class="carousel no-mark">
+				<li class="carousel-pt">
+				<!--<img src="img/carousel1.png" width="1045" height="881" alt="Крем-брюле и пломбир">-->
+				<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
+				<a class="btn btn-carousel" href="#">Давайте оба!</a>
+				</li>
+				<li class="carousel-pt">
+				<!--<img src="img/carousel2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">-->
+				<p>Шоколадный пломбир <br>и лимонный сорбет</p>
+				<a class="btn btn-carousel" href="#">Давайте оба!</a>
+				</li>
+				<li class="carousel-pt">
+				<!--<img src="img/carousel3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">-->
+				<p>Пломбир с помадкой <br>и клубничный щербет</p>
+				<a class="btn btn-carousel" href="#">Давайте оба!</a>
+				</li>
+			</ul>
 		</div>
 		<section class="present">
 			<ul class="present-variant no-mark">
@@ -184,7 +191,7 @@
 		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">
 		Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
 	</footer>
-	<section class="connection">
+	<section class="connection modal">
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
@@ -206,5 +213,6 @@
 			<img src="img/cross-big.svg" width="18" height="17" alt="Удалить">
 		</button>
 	</section>
+	</div>
   </body>
 </html>
