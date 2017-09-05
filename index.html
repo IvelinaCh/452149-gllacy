@@ -8,6 +8,7 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="container">
 		<input type="radio" id="slide1" class="visually-hidden" name="slide" checked>
 		<input type="radio" id="slide2" class="visually-hidden" name="slide">
 		<input type="radio" id="slide3" class="visually-hidden" name="slide">
@@ -35,7 +36,7 @@
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<div class="transparent">
 					<form class="search-form modal" method="get">
-						<input class="input" type="search" id="search" name="search">
+						<input class="input" type="search" id="search" name="search" minlength="1">
 						<label class="place-label" for="search">Что ищем?</label>
 					</form>
 					</div>
@@ -44,12 +45,12 @@
 					<a class="user-style button-entrance" href="#">Вход</a>
 					<div class="transparent">
 					<section class="login modal">
-						<h3 class="visually-hidden caption">Авторизация</h3>
+						<h3 class="visually-hidden">Авторизация</h3>
 						<form class="login-form" method="get">
 							<div>
-								<input class="input" type="email" id="mail"><br>
-								<label class="place-label" for="mail">Электронная почта</label>
-								<input class="input" type="password" id="password"><br>
+								<input class="input" type="text" id="mail" minlength="1" required><br>
+								<label class="place-label place-label-top" for="mail">Электронная почта</label>
+								<input class="input" type="password" id="password" minlength="1" required><br>
 								<label class="place-label" for="password">Пароль</label>
 							</div>
 							<button class="btn button" type="submit">Войти</button>
@@ -69,7 +70,7 @@
 			<b>8 812 450-25-25</b>
 		</p>
 	</header>
-	<main class="container">
+	<main class="main-container">
 		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
 			<ul class="carousel no-mark">
@@ -157,7 +158,7 @@
 			<div class="subscription-fon">
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
-				<input class="input" type="email" id="email">
+				<input class="input" type="text" id="email" minlength="1" required>
 				<label class="place-label" for="email">Электронная почта</label>
 				<button class="btn button" type="submit">Отправить</button>
 			</form>
@@ -168,7 +169,7 @@
 		<!--<img src="img/map1.jpg" width="1250" height="430" alt="Адрес главного офиса и офлайн магазина: ул.Большая Конюшенная 19/8, Санкт-Петербург">-->
 
 		<section class="contacts">
-			<h3 class="visually-hidden caption">Контактная информация</h3>
+			<h3 class="visually-hidden">Контактная информация</h3>
 			<p>Адрес главного офиса<br> и офлайн магазина:</p>
 			<b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
 			<div class="tel">
@@ -202,16 +203,16 @@
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
 		<form class="connect-form" method="get">
 			<p>
-				<input class="input" type="text" id="name">
-				<label class="place-label" for="name">Как вас зовут?</label>
+				<input class="input" type="text" id="name" minlength="1" required>
+				<label class="place-label place-label-top" for="name">Как вас зовут?</label>
 			</p>
 			<p>
-				<input class="input" type="email" id="y-mail">
+				<input class="input" type="text" id="y-mail" minlength="1" required>
 				<label class="place-label" for="y-mail">Ваша почта для ответа?</label>
 			</p>
 			<p>
-				<textarea class="input input-area" name="comment" id="comment" rows="5"></textarea>
-				<label class="place-label" for="comment">Напишите что-нибудь...</label>
+				<textarea class="input input-area" name="comment" id="comment" rows="5" minlength="1" placeholder="Напишите что-нибудь..."></textarea>
+				<label class="place-label visually-hidden" for="comment">Напишите что-нибудь...</label>
 			</p>
 			<button class="btn button" type="submit">Отправить</button>
 		</form>
@@ -220,6 +221,7 @@
 			<img src="img/cross-big.svg" width="18" height="17" alt="Удалить">
 		</button>
 	</section>
+	</div>
 	</div>
   </body>
 </html>
