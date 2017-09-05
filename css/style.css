@@ -245,6 +245,7 @@ a {
 }
 
 .login {
+	width: 280px;
 	top: 55px;
 	right: 125px;
 	padding: 20px;
@@ -1557,7 +1558,8 @@ display: none
 }
 
 .place-label-top {
-	transform: translateY(-60px);
+	bottom: 170px;
+	/*transform: translateY(-60px);*/
 	z-index: 3;
 }
 
