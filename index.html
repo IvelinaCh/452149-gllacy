@@ -20,7 +20,7 @@
 				<li class="main-menu-pt"><a class="main-menu-li" href="catalog.html">Каталог</a>
 					<ul class="popup-list no-mark modal">
 						<li><a href="#"><b>Новинки</b></a></li>
-						<li><a href="#">Сливочное</a></li>
+						<li class="current-popup"><a href="catalog.html">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
 						<li><a href="#">Фруктовый лед</a></li>
 						<li><a href="#">Мелорин</a></li>
@@ -52,8 +52,8 @@
 									<label class="place-label" for="password">Пароль</label>
 								</fieldset>
 								<button class="btn button" type="submit">Войти</button>
-								<p>
-									<a class="forget" href="#">Забыли пароль?</a><br>
+								<p class="avtorizacion-help">
+									<a class="forget" href="#">Забыли пароль?</a>
 									<a class="new-reg" href="#">Новая регистрация</a>
 								</p>
 							</form>
@@ -64,22 +64,22 @@
 				</li>
 			</ul>
 		</nav>
-		<p class="busy-hours"><span class="hours">С 10 до 20, ежедневно</span><br><b>8 812 450-25-25</b></p>
+		<p class="busy-hours"><span class="hours">С 10 до 20, ежедневно</span><b>8 812 450-25-25</b></p>
 	</header>
 	<main class="main-container">
 		<h1 class="visually-hidden title">GllacyShop</h1>
 		<div class="poster">
 			<ul class="carousel no-mark">
 				<li class="carousel-pt">
-					<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
+					<p>Крем-брюле и пломбир с малиновым джемом</p>
 					<a class="btn btn-carousel" href="#">Давайте оба!</a>
 				</li>
 				<li class="carousel-pt">
-					<p>Шоколадный пломбир <br>и лимонный сорбет</p>
+					<p>Шоколадный пломбир и лимонный сорбет</p>
 					<a class="btn btn-carousel" href="#">Давайте оба!</a>
 				</li>
 				<li class="carousel-pt">
-					<p>Пломбир с помадкой <br>и клубничный щербет</p>
+					<p>Пломбир с помадкой и клубничный щербет</p>
 					<a class="btn btn-carousel" href="#">Давайте оба!</a>
 				</li>
 			</ul>
@@ -150,22 +150,23 @@
 				<div class="subscription-fon">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
-						<input class="input" type="text" id="email" minlength="1" required>
-						<label class="place-label" for="email">Электронная почта</label>
+						<fieldset class="group">
+							<input class="input" type="text" id="email" minlength="1" required>
+							<label class="place-label" for="email">Электронная почта</label>
+						</fieldset>
 						<button class="btn button" type="submit">Отправить</button>
 					</form>
 				</div>
 			</section>
 		</div>
 		<div class="maps-contacts">
-<!--<img src="img/map1.jpg" width="1250" height="430" alt="Адрес главного офиса и офлайн магазина: ул.Большая Конюшенная 19/8, Санкт-Петербург">-->
 			<section class="contacts">
 				<h3 class="visually-hidden">Контактная информация</h3>
-				<p>Адрес главного офиса<br> и офлайн магазина:</p>
-				<b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
+				<p>Адрес главного офиса и офлайн магазина:</p>
+				<p><b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b></p>
 				<div class="tel">
 					<p>Для заказов по телефону:</p>
-					<b>8 812 450-25-25</b>
+					<p><b>8 812 450-25-25</b></p>
 					<p>(с 10 до 20 ежедневно)</p>
 				</div>
 				<a class="btn" href="#">Форма обратной связи</a>
