@@ -759,6 +759,7 @@ a {
 	-webkit-appearance: none;
 	-moz-appearance: none;      
 	appearance: none;
+	border: none;
 }
 
 .form-list-select::-ms-expand { 
@@ -780,7 +781,7 @@ display: none;
 .select-arrow::after {
 	position: absolute;
 	content: "";
-	top: 35px;
+	top: 40px;
 	left: 170px;
 	width: 11px;
 	height: 12px;
