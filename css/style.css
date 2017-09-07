@@ -484,7 +484,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 40px;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	font-size: 32px;
 	line-height: 44px;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -520,16 +520,6 @@ a {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
-}
-
-.present1 {
-	background-color: #d36185;
-	background: url("../img/present1.jpg") no-repeat;
-}
-
-.present2 {
-	background-color: #613f33;
-	background: url("../img/present2.jpg") no-repeat;
 }
 
 .description {
@@ -1175,7 +1165,6 @@ a {
 .present-variant,
 .news {
 	display: flex;
-	justify-content: space-between;
 	min-height: 229px;
 	margin: 0;
 	padding: 0;
@@ -1190,6 +1179,7 @@ a {
 }
 
 .news {
+	justify-content: space-between;
 	min-height: 219px;
 }
 
@@ -1218,6 +1208,17 @@ a {
 	right: 20px;
 }
 
+.present1 {
+	background-color: #d36185;
+	background: url("../img/present1.jpg") no-repeat;
+}
+
+.present2 {
+	margin-left: auto;
+	background-color: #613f33;
+	background: url("../img/present2.jpg") no-repeat;
+}
+
 .hits-list {
 	display: flex;
 	justify-content: space-between;
@@ -1229,7 +1230,7 @@ a {
 .description {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 32px;
+	margin-bottom: 37px;
 	padding: 27px 20px;
 	border-radius: 15px;
 } 
