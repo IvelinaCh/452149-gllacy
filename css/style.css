@@ -1441,11 +1441,11 @@ a {
 	content: "";
 	position: absolute;
 	background: url("../img/radio-off.svg") no-repeat 50% 50%;
+	background-size: 100%;
 	top: 0px;
 	left: -30px;
 	width: 20px;
 	height: 20px;
-	background-size: 100%;
 	opacity: 0.8;
 }
 
@@ -1460,8 +1460,11 @@ a {
 }
 
 .topping-list input[type="checkbox"]:checked + label::after {
-	background: url("../img/checkbox-on.svg") no-repeat 5% 50%;
-	background-size: 120%;
+	background: url("../img/checkbox-on.svg") no-repeat 0% 50%;
+	background-size: 80%;
+	top: -5px;
+	width: 30px;
+	height: 30px;
 }
 
 .fat-radio-list input:hover ~ label::after,
