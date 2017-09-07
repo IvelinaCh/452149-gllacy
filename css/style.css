@@ -10,8 +10,7 @@
 }
 
 .wrapper {
-	background: #849d8f url("../img/carousel1.png") no-repeat;
-	background-position: top center;
+	background: #849d8f url("../img/carousel1.png") no-repeat center 0;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -1413,7 +1412,8 @@ a {
 	width: 9px;
 	height: 14px;
 	font-size: 0;
-	background: url("../img/icon-right-small.svg") no-repeat 50% 50%;
+	background: url("../img/icon-right-smallF.svg") no-repeat 50% 50%;
+	opacity: 1;
 }
 
 .back {
@@ -1441,22 +1441,26 @@ a {
 	position: absolute;
 	background: url("../img/radio-off.svg") no-repeat 50% 50%;
 	top: -5px;
-	left: -35px;
+	left: -33px;
 	width: 30px;
 	height: 30px;
+	background-size: 100%;
 	opacity: 0.8;
 }
 
 .topping-list label::after {
-	background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
+	background: url("../img/checkbox-off.svg") no-repeat 20% 50%;
+	background-size: 100%;
 }
 
 .fat-radio-list input[type="radio"]:checked + label::after {
 	background: url("../img/radio-on.svg") no-repeat 50% 50%;
+	background-size: 100%;
 }
 
 .topping-list input[type="checkbox"]:checked + label::after {
-	background: url("../img/checkbox-on.svg") no-repeat 50% 50%;
+	background: url("../img/checkbox-on.svg") no-repeat 5% 50%;
+	background-size: 120%;
 }
 
 .fat-radio-list input:hover ~ label::after,
