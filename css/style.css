@@ -10,7 +10,8 @@
 }
 
 .wrapper {
-	background: #849d8f url("../img/carousel1.png") no-repeat 80px 0;
+	background: #849d8f url("../img/carousel1.png") no-repeat;
+	background-position: top center;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -169,25 +170,29 @@ a {
 .popup-list a {
 	font-size: 14px;
 	line-height: 16px;
-	color: #000000;
+	color: #323232;
 }
 
 .popup-list li:hover,
-.popup-list li:focus,
-.popup-list a:hover,
-.popup-list a:focus {
+.popup-list li:focus {
 	background-color: #fbded7;
 }
 
-.popup-list li:active,
-.popup-list a:active {
+.popup-list li:hover a,
+.popup-list li:focus a {
+	color: #323232;
+}
+
+.popup-list li:active {
 	background-color: #f6b5a5;
 }
 
-.popup-list .current-popup,
+.popup-list .current-popup {
+	background-color: #d07058;
+}
+
 .current-popup a {
 	color: #ffffff;
-	background-color: #d07058;
 }
 
 .user-navigation a {
@@ -293,17 +298,37 @@ a {
  }
  
 .busket {
-	top: 50px;
-	right: 0px;
-}
- 
-.busket-list {
 	width: 540px;
-	padding: 10px 15px;
+	top: 50px;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.busket-form .price-ice {
+	font-size: 13px;
+	line-height: 16px;
+	color: #999999;
+}
+
+.busket-form b {
+	position: absolute; 
+	top: 10px; 
+	right: -5px;
+	font-size: 15px;
+	line-height: 18px;
+	color: #323232;
+}
+
+.busket-list {
+	width: 100%;
+	margin: 0;
 }
 
 .busket-list p {
 	width: 216px;
+	padding-left: 15px;
 }
 
 .busket-list img {
@@ -311,22 +336,39 @@ a {
 }
 
 .busket-list td {
-	padding: 5px 0 0; background-color: red;
+	display: inline-block; 
+	position: relative;
+	vertical-align: middle;
+	padding: 5px 0 0;
+}
+
+.sum-basket {
+	width: 100%;
+	text-align: right;
+	font-weight: bold;
+	border-top: 1px solid #c9c8c7;
 }
 
 .td-price-ice {
 	white-space: nowrap;
+	margin: 0 30px;
 }
 
 .busket-form {
 	display: flex;
 	flex-direction: column;
+	padding: 10px 15px 0;
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+	background-color: #f8f7f4;
 	border-radius: 5px;
 }
 
 .busket-form .button {
-	margin: -10px 15px 20px auto;
-	padding: 15px 25px;
+	margin: 33px 0 20px auto;
+	margin-left: 335px;
+	padding: 10px 13px;
 	border-radius: 25px;
 }
 
@@ -398,7 +440,7 @@ a {
 }
 
 .carousel p {
-	width: 670px;
+	width: 672px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	font-size: 60px;
@@ -593,11 +635,8 @@ a {
 	box-shadow: 0 0 0 1px #c7c6c5;
 }
 
-.contacts {
-	background-color: #ffffff;
-}
-
 .contacts p {
+	margin: 0;
 	font-size: 14px;
 	line-height: 20px;
 	color: #323232;
@@ -605,6 +644,7 @@ a {
 
 .contacts > p:first-of-type {
 	width: 150px;
+	padding-bottom: 0;
 }
 
 .contacts b {
@@ -681,31 +721,6 @@ a {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.busket-form {
-	font-size: 13px;
-	line-height: 16px;
-	color: #323232;
-	background-color: #f8f7f4;
-}
-
-.busket-form .price-ice {
-	font-size: 13px;
-	line-height: 16px;
-	color: #999999;
-}
-
-.busket-form b {
-	font-size: 15px;
-	line-height: 18px;
-	color: #323232;
-}
-
-.td-basket {
-	text-align: right;
-	vertical-align: bottom;
-	border-top: 1px solid #c9c8c7;
-}
-
 .breadcrambs a {
 	margin: 0 8px;
 	font-size: 14px;
@@ -754,16 +769,17 @@ a {
 	position: relative;
 	padding: 10px;	
 	padding-right: 40px;
-	background-color: #a9b9af;
+	background: #a9b9af url("../img/select-arrow.svg") no-repeat 90% 50%;
 	border-radius: 20px;
+	border: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;      
 	appearance: none;
-	border: none;
+	
 }
 
 .form-list-select::-ms-expand { 
-display: none; 
+	display: none; 
 }
 
 .form-list-select:hover,
@@ -771,25 +787,7 @@ display: none;
 	font-size: 16px;
 	line-height: 18px;
 	color: #323232;
-	background-color: #ffffff;
-}
-
-.select-arrow {
-	position: relative;
-}
-
-.select-arrow::after {
-	position: absolute;
-	content: "";
-	top: 40px;
-	left: 170px;
-	width: 11px;
-	height: 12px;
-	background: url("../img/select-arrow.svg") no-repeat;
-}
-
-.form-list-select:hover .select-arrow::after {
-	background: url("../img/select-arrowB.svg") no-repeat;
+	background: #ffffff url("../img/select-arrowB.svg") no-repeat 90% 50%;
 }
 
 .enter-filter {
@@ -1169,10 +1167,6 @@ display: none;
 #slide2:checked ~ .wrapper {
 	background: #8996a6 url("../img/carousel2.png") no-repeat 80px 0;
 }
-/*
-#slide2:checked body {
-	background-color: #8996a6;
-}*/
 
 #slide3:checked ~ .wrapper {
 	background: #9d8b84 url("../img/carousel3.png") no-repeat 80px 0;
@@ -1265,24 +1259,28 @@ display: none;
 	min-height: 304px;
 	margin-left: auto;
 	margin-right: 27px;
-	padding: 20px;
+	padding: 30px 20px;
 	padding-left: 25px;
+	background-color: #ffffff;
 	box-sizing: border-box;
 	border-radius: 15px;
 }
 
-.contacts p {
-	margin: 0;
-	padding-top: 8px;
-}
-
 .tel {
 	margin-top: 15px;
-	margin-bottom: 32px;
+	margin-bottom: 37px;
+}
+
+.tel p {
+	margin-bottom: 5px;
+}
+
+.tel span {
+	display: block;
 }
 
 .contacts .btn {
-	padding: 13px 30px;
+	padding: 11px 28px;
 }
 
 .main-footer {
@@ -1334,13 +1332,6 @@ display: none;
 	margin-top: 19px;
 	margin-bottom: 38px;
 }
-/*
-.filter::before {
-	content: "";
-    display: inline-block;
-    min-height: 133px;
-    visibility: hidden;
-}*/
 
 .filter label, .filter legend { 
 	margin: 0;
@@ -1448,25 +1439,24 @@ display: none;
 .topping-list label::after {
 	content: "";
 	position: absolute;
-	background: url("../img/radio-off.svg") no-repeat;
-	top: -3px;
-	left: -33px;
-	width: 25px;
-	height: 25px;
+	background: url("../img/radio-off.svg") no-repeat 50% 50%;
+	top: -5px;
+	left: -35px;
+	width: 30px;
+	height: 30px;
 	opacity: 0.8;
 }
 
 .topping-list label::after {
-	background: url("../img/checkbox-off.svg") no-repeat;
-	top: 0;
+	background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
 }
 
 .fat-radio-list input[type="radio"]:checked + label::after {
-	background: url("../img/radio-on.svg") no-repeat;
+	background: url("../img/radio-on.svg") no-repeat 50% 50%;
 }
 
 .topping-list input[type="checkbox"]:checked + label::after {
-	background: url("../img/checkbox-on.svg") no-repeat;
+	background: url("../img/checkbox-on.svg") no-repeat 50% 50%;
 }
 
 .fat-radio-list input:hover ~ label::after,
@@ -1646,6 +1636,3 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	flex-wrap: wrap;
 }
-/*.busket{display: block;}
-/*
-.connection {display: block;}*/

@@ -2,22 +2,26 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
 		<title>GllacyShop</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-	<div class="container">
 		<input type="radio" id="slide1" class="visually-hidden" name="slide" checked>
 		<input type="radio" id="slide2" class="visually-hidden" name="slide">
 		<input type="radio" id="slide3" class="visually-hidden" name="slide">
 	<div class="wrapper">
+	<div class="container">
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="logo"><img src="img/logo.svg" width="170" height="65" alt="Логотип магазина"></a>
+			<a class="logo">
+				<img src="img/logo.svg" width="170" height="65" alt="Логотип магазина">
+			</a>
 			<ul class="site-navigation no-mark">
-				<li class="main-menu-pt"><a class="main-menu-li" href="catalog.html">Каталог</a>
+				<li class="main-menu-pt">
+					<a class="main-menu-li" href="catalog.html">Каталог</a>
 					<ul class="popup-list no-mark modal">
 						<li><a href="#"><b>Новинки</b></a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
@@ -30,7 +34,8 @@
 				<li class="main-menu-pt"><a class="main-menu-li" href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation no-mark">
-				<li class="user-navigation-li"><button class="user-style button button-search" type="button">Поиск</button>
+				<li class="user-navigation-li">
+					<button class="user-style button button-search" type="button">Поиск</button>
 					<div class="transparent">
 						<form class="search-form modal" method="get">
 							<input class="input" type="search" id="search" name="search" minlength="1" required>
@@ -38,7 +43,8 @@
 						</form>
 					</div>
 				</li>
-				<li class="user-navigation-li"><a class="user-style button-entrance" href="#">Вход</a>
+				<li class="user-navigation-li">
+					<a class="user-style button-entrance" href="#">Вход</a>
 					<div class="transparent">
 						<section class="login modal">
 							<h3 class="visually-hidden">Авторизация</h3>
@@ -163,11 +169,10 @@
 			<section class="contacts">
 				<h3 class="visually-hidden">Контактная информация</h3>
 				<p>Адрес главного офиса и офлайн магазина:</p>
-				<p><b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+				<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
 				<div class="tel">
 					<p>Для заказов по телефону:</p>
-					<p><b>8 812 450-25-25</b></p>
-					<p>(с 10 до 20 ежедневно)</p>
+					<p><b><a href="#">8 812 450-25-25</a></b><span>(с 10 до 20 ежедневно)</span></p>
 				</div>
 				<a class="btn" href="#">Форма обратной связи</a>
 			</section>
@@ -186,7 +191,7 @@
 			<li><a href="#">О производстве</a></li>
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
-		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип html академии">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип html академии">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 	</footer>
 	<section class="connection modal">
 		<h3 class="caption">Мы обязательно вам ответим!</h3>
