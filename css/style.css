@@ -425,7 +425,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	margin-top: -5px;
 	padding: 0;
+	padding-bottom: 5px;
 	margin-left: auto;
 	align-self: flex-end;
 	text-align: right;
@@ -1080,14 +1082,14 @@ a {
 }
 
 .logo {
-	margin-left: -8px;
-	margin-top: 3px;
+	margin: 3px 0 3px -8px;
 }
 
 .site-navigation {
 	display: flex;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 5px;
 }
 
 .user-navigation-li{
@@ -1181,6 +1183,7 @@ a {
 .news {
 	justify-content: space-between;
 	min-height: 219px;
+	margin-bottom: 35px;
 }
 
 .present1,
@@ -1327,7 +1330,7 @@ a {
 	justify-content: space-between;
 	align-content: space-between;
 	width: 861px;
-	min-height: 136px;
+	min-height: 138px;
 	margin: 0;
 	padding: 0;
 	margin-top: 19px;
@@ -1374,10 +1377,6 @@ a {
 
 .inner-page .main-footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.inner-page .main-header {
-	margin-bottom: 3px;
 }
 
 .catalog-list-item:nth-child(4n) {
