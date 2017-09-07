@@ -1160,15 +1160,15 @@ a {
 }
 
 #slide1:checked ~ .wrapper {
-	background: #849d8f url("../img/carousel1.png") no-repeat 80px 0;
+	background: #849d8f url("../img/carousel1.png") no-repeat center 0;
 }
 
 #slide2:checked ~ .wrapper {
-	background: #8996a6 url("../img/carousel2.png") no-repeat 80px 0;
+	background: #8996a6 url("../img/carousel2.png") no-repeat center 0;
 }
 
 #slide3:checked ~ .wrapper {
-	background: #9d8b84 url("../img/carousel3.png") no-repeat 80px 0;
+	background: #9d8b84 url("../img/carousel3.png") no-repeat center 0;
 }
 
 .present-variant,
