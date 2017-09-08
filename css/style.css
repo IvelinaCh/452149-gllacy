@@ -228,7 +228,7 @@ a {
 }
 
 .search-form  {
-	top: 52px;
+	top: 53px;
 	right: 230px;
 	padding: 20px 15px 20px 15px;
 }
@@ -243,7 +243,7 @@ a {
 
 .login {
 	width: 280px;
-	top: 50px;
+	top: 53px;
 	right: 125px;
 	margin: 0;
 	padding: 20px;
@@ -299,7 +299,7 @@ a {
  
 .busket {
 	width: 540px;
-	top: 50px;
+	top: 53px;
 	right: 0;
 	padding: 0;
 	margin: 0;
@@ -519,6 +519,7 @@ a {
 }
 
 .present p {
+	margin-top: 16px;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
@@ -567,35 +568,6 @@ a {
 
 .delivery::before {
 	background: url("../img/thermometer.svg") no-repeat;
-}
-
-.new {
-	background-color: #ffffff;
-	background-image: url("../img/new.jpg");
-	background-position: 0 0;
-}
-
-.new a {
-	font-size: 24px;
-	line-height: 30px;
-	color: #323232;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.subscription {
-	display: flex;
-	font: inherit;
-	color: #5a5a5a;
-	background: #ffffff url("../img/bg-post.svg") no-repeat 0 0;
-}
-
-.subscription-fon {
-	margin: -13px;
-	margin-bottom: -14px;
-	padding: 19px;
-	background-color: #ffffff;
-	border-radius: 15px;
 }
 
 .subscription-fon p {
@@ -753,15 +725,21 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
-	padding: 10px;
-	padding-left: 45px;
+	padding: 9px;
+	padding-left: 38px;
+}
+
+.fat-radio-list li:first-child,
+.fat-radio-list li:nth-child(2) {
+	padding-left: 46px;
 }
 
 .filter .form-list-select {
 	position: relative;
-	padding: 10px;	
-	padding-right: 40px;
-	background: #a9b9af url("../img/select-arrow.svg") no-repeat 90% 50%;
+	padding: 9px 35px 9px 15px;
+	margin-right: 28px;
+	margin-bottom: 15px;
+	background: #a9b9af url("../img/select-arrow.svg") no-repeat 93% 50%;
 	border-radius: 20px;
 	border: none;
 	-webkit-appearance: none;
@@ -785,11 +763,12 @@ a {
 .enter-filter {
 	margin-top: auto; 
 	margin-top: 25px;
+	margin-left: auto;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 500;
-	padding: 8px 30px;
+	padding: 3px 28px;
 	border-radius: 20px;
 	background-color: #9cb0a4;
 	border: 2px solid #ffffff;
@@ -915,6 +894,8 @@ a {
 	top: -6px;
 	left: -14px;
 	background-color: rgba(255, 255, 255, 0.1);
+	z-index: 2;
+	border-radius: 5px;
 }
 
 .catalog-list-item:hover.catalog-list-item::before,
@@ -1112,7 +1093,7 @@ a {
 .poster {
 	position: relative;
 	text-align: center;
-	padding-top: 260px;
+	padding-top: 258px;
 	margin-left: -40px;
 }
 
@@ -1183,7 +1164,7 @@ a {
 .news {
 	justify-content: space-between;
 	min-height: 219px;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 
 .present1,
@@ -1192,11 +1173,25 @@ a {
 .subscription {
 	position: relative;
 	margin: 0; 
-	padding: 20px;
-	padding-top: 17px;
+	padding: 15px 17px 17px 17px;
 	width: 560px;
 	box-sizing: border-box;
 	border-radius: 15px;
+}
+
+.new {
+	padding-top: 20px;
+	background-color: #ffffff;
+	background-image: url("../img/new.jpg");
+	background-position: 0 0;
+}
+
+.new a {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .new p {
@@ -1208,7 +1203,7 @@ a {
 	position: absolute;
 	padding: 11px 22px;
 	bottom: 23px;
-	right: 20px;
+	right: 23px;
 }
 
 .present1 {
@@ -1220,6 +1215,21 @@ a {
 	margin-left: auto;
 	background-color: #613f33;
 	background: url("../img/present2.jpg") no-repeat;
+}
+
+.subscription {
+	display: flex;
+	padding: 0;
+	font: inherit;
+	color: #5a5a5a;
+	background: #ffffff url("../img/bg-post.svg") no-repeat 0 0;
+}
+
+.subscription-fon {
+	margin: 5px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 15px;
 }
 
 .hits-list {
@@ -1258,7 +1268,7 @@ a {
 .contacts {
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-top: 65px;
+	margin-top: 60px;
 	width: 302px;
 	min-height: 304px;
 	margin-left: auto;
@@ -1271,7 +1281,7 @@ a {
 }
 
 .tel {
-	margin-top: 15px;
+	margin-top: 20px;
 	margin-bottom: 37px;
 }
 
@@ -1327,9 +1337,8 @@ a {
 .filter {
 	display: flex; 
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-content: space-between;
-	width: 861px;
+	width: 858px;
 	min-height: 138px;
 	margin: 0;
 	padding: 0;
@@ -1351,10 +1360,20 @@ a {
 .fat-radio-list,
 .topping-list {
 	display: flex; 
-	padding: 0;
+	padding: 0 10px 0 0;
 	margin: 0;
 	border-radius: 20px;
 	background-color: #a9b9af;
+}
+
+.topping-list li {
+	padding-left: 40px;
+}
+
+.topping-list li:first-child,
+.topping-list li:last-child,
+.topping-list li:nth-last-child(2)  {
+	padding-left: 48px;
 }
 
 .catalog-list {
@@ -1370,7 +1389,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	float: right;
-	width: 195px;
+	width: 200px;
 	margin: 3px 0 29px;
 	padding: 0;
 }
@@ -1400,25 +1419,29 @@ a {
 }
 
 .subscription-form  .button {
-	float: right;
+	position: absolute;
 	padding: 10px 15px;
 	margin: 0;
+	bottom: 40px;
+	right: 27px;
 }
- 
+
 .next,
 .back {
+	margin-left: 8px;
 	margin-top: -5px;
-	padding: 7px 9px;
-	width: 9px;
-	height: 14px;
+	padding: 0;
 	font-size: 0;
-	background: url("../img/icon-right-smallF.svg") no-repeat 90% 60%;
+	background: url("../img/icon-right-smallF.svg") no-repeat 70% 60%;
+	box-sizing: 27px;
 	opacity: 1;
 }
 
 .back {
+	margin-right: 8px;
+	padding: 0;
 	transform: rotate(180deg);
-	background-position: 90% 40%;
+	background-position: 70% 40%;
 	opacity: 0.2;
 }
 
@@ -1444,14 +1467,16 @@ a {
 	background-size: 100%;
 	top: 0px;
 	left: -30px;
-	width: 20px;
-	height: 20px;
+	width: 23px;
+	height: 23px;
 	opacity: 0.8;
 }
 
 .topping-list label::after {
 	background: url("../img/checkbox-off.svg") no-repeat 20% 50%;
 	background-size: 100%;
+	width: 20px;
+	height: 20px;
 }
 
 .fat-radio-list input[type="radio"]:checked + label::after {
@@ -1482,6 +1507,7 @@ a {
 .filter-block {
 	display: flex;
 	flex-direction: column;
+	align-content: space-between;
 }
 
 .group {
@@ -1539,20 +1565,21 @@ a {
 .block-range {
 	align-self: flex-start;
 	position: relative;
+	margin-right: auto;
 }
 
 .range {
 	margin-bottom: auto;
 	position: relative;
-	left: -15px;
+	left: -12px;
 }
 
 .range::after {
 	position: absolute;
 	content: "";
-	width: 220px;
+	width: 217px;
 	height: 36px;
-	top: 25px;
+	top: 27px;
 	left: 0px;
 	background-color: #a9b9af;
 	border-radius: 20px;
@@ -1564,19 +1591,19 @@ a {
 	display: block;
 	content: "";
 	height: 5px;
-	top: 42px;
+	top: 44px;
 	z-index: 2;
 }
 
 .block-range::before {
 	width: 177px;
-	left: 5px;
+	left: 7px;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .block-range::after {
 	width: 107px;
-	left: 20px;
+	left: 22px;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1588,13 +1615,13 @@ a {
 	width: 20px;
 	height: 22px;
 	background: url("../img/filter-button.svg") no-repeat;
-	top: 35px;
-	left: 20px;
+	top: 37px;
+	left: 22px;
 	z-index: 2;
 }
 
 .block-range-end {
-	left: 115px;
+	left: 119px;
 }
 
 .block-range-start:hover,
