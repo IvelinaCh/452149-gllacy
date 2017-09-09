@@ -38,8 +38,10 @@
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<div class="transparent">
 						<form class="search-form modal" method="get">
-							<input class="input" type="search" id="search" name="search" minlength="1" required>
-							<label class="place-label" for="search">Что ищем?</label>
+							<fieldset class="group">
+								<input class="input" type="search" id="search" name="search" minlength="1" required>
+								<label class="place-label" for="search">Что ищем?</label>
+							</fieldset>
 						</form>
 					</div>
 				</li>
@@ -50,11 +52,11 @@
 							<h2 class="visually-hidden">Авторизация</h2>
 							<form class="login-form" method="get">
 								<fieldset class="group">
-									<input class="input" type="text" id="mail" minlength="1" required>
+									<input class="input input-login-form" type="text" id="mail" minlength="1" required>
 									<label class="place-label" for="mail">Электронная почта</label>
 								</fieldset>
 								<fieldset class="group">
-									<input class="input" type="password" id="password" minlength="1" required>
+									<input class="input input-login-form" type="password" id="password" minlength="1" required>
 									<label class="place-label" for="password">Пароль</label>
 								</fieldset>
 								<button class="btn button" type="submit">Войти</button>
