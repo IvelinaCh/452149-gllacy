@@ -406,6 +406,8 @@ a {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border-radius: 10px;
+	-webkit-box-shadow: 0 0 200px 100% rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 0 200px 100% rgba(0, 0, 0, 0.5);
 }
 
 .connection  .input {
@@ -456,6 +458,9 @@ a {
 	position: absolute;
 	top: 13px;
 	right: 13px;
+	width: 18px;
+	height: 17px;
+	background: url("../img/cross-big.svg") no-repeat;
 }
 
 .busy-hours {
@@ -532,7 +537,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 40px;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	font-size: 32px;
 	line-height: 44px;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -811,7 +816,7 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	color: #323232;
-	background: #ffffff url("../img/select-arrowB.svg") no-repeat 90% 50%;
+	background: #ffffff url("../img/select-arrowB.svg") no-repeat 93% 50%;
 }
 
 .enter-filter {
@@ -995,16 +1000,16 @@ a {
 
 .button-entrance {
 	display: inline-block;
-	width: 93px;
-	height: 32px;
-	padding: 8px 45px;
+	min-width: 93px;
+	min-height: 32px;
+	padding: 8px 15px 8px 45px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border-radius: 20px;
 	background-image: url("../img/entrance.svg");
 	background-repeat: no-repeat;
 	background-size: 21px 19px;
-	background-position: 20% 50%;
+	background-position: 17px 50%;
 }
 
 .button-entrance:hover,
@@ -1016,16 +1021,16 @@ a {
 .button-basket, 
 .button-basket2 {
 	display: inline-block;
-	width: 117px;
-	height: 32px;
-	padding: 8px 40px;
+	min-width: 117px;
+	min-height: 32px;
+	padding: 8px 25px 8px 45px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border-radius: 20px;
 	background-image: url("../img/basket.svg");
 	background-repeat: no-repeat;
 	background-size: 21px 20px;
-	background-position: 15% 50%;
+	background-position: 17px 50%;
 }
 
 .button-basket2 {
@@ -1064,7 +1069,6 @@ a {
 }
 
 .social-vk {
-	margin-right: 0;
 	background-image: url("../img/vk1.svg");
 }
 
@@ -1222,10 +1226,13 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	min-height: 229px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 
 .present-variant::before {
@@ -1239,7 +1246,7 @@ a {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	min-height: 219px;
+	min-height: 220px;
 	margin-bottom: 40px;
 }
 
@@ -1249,19 +1256,20 @@ a {
 .subscription {
 	position: relative;
 	margin: 0; 
-	padding: 15px 17px 17px 17px;
+	padding: 15px 15px 97px 20px;
 	width: 560px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border-radius: 15px;
+	box-sizing: border-box;
 }
 
 .new {
-	padding-top: 20px;
-	padding-left: 20px;
+	padding: 20px;
+	min-height: 220px;
 	background-color: #ffffff;
 	background-image: url("../img/new.jpg");
-	background-position: 0 0;
+	background-size: cover;
 }
 
 .new a {
@@ -1280,33 +1288,36 @@ a {
 .present .btn {
 	position: absolute;
 	padding: 11px 22px;
-	bottom: 23px;
-	right: 23px;
+	bottom: 24px;
+	right: 21px;
 }
 
 .present1 {
 	background-color: #d36185;
-	background: url("../img/present1.jpg") no-repeat;
+	background: url("../img/present1.png") no-repeat 10% 0;
+	background-size: cover;
 }
 
 .present2 {
 	margin-left: auto;
 	background-color: #613f33;
-	background: url("../img/present2.jpg") no-repeat;
+	background: url("../img/present2.jpg") no-repeat 10% 0;
+	background-size: cover;
 }
 
 .subscription {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 0;
+	padding: 5px;
+	min-height: 220px;
 	font: inherit;
 	color: #5a5a5a;
 	background: #ffffff url("../img/bg-post.svg") no-repeat 0 0;
+	background-size: cover;
 }
 
 .subscription-fon {
-	margin: 5px;
 	padding: 20px;
 	background-color: #ffffff;
 	border-radius: 15px;
@@ -1410,12 +1421,12 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	max-width: 380px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 	padding: 0;
 	margin: 0;
 }
@@ -1569,8 +1580,6 @@ a {
 	padding: 0;
 	font-size: 0;
 	background: url("../img/icon-right-smallF.svg") no-repeat 70% 60%;
-	-webkit-box-sizing: 27px;
-	        box-sizing: 27px;
 	opacity: 1;
 }
 
