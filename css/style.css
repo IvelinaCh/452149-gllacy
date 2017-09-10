@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 1146px;
 	margin: 0 auto;
 }
 
@@ -1126,8 +1126,6 @@ a {
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
-	width: 1146px;
-	margin: 0;
 	padding: 5px 27px 0 27px;
 }
 
@@ -1162,7 +1160,6 @@ a {
 }
 
 .main-container {
-	width: 1146px;
 	padding-left: 27px;
 	padding-right: 27px;
 }
@@ -1170,7 +1167,7 @@ a {
 .poster {
 	position: relative;
 	text-align: center;
-	padding-top: 258px;
+	padding-top: 255px;
 	margin-left: -40px;
 }
 
@@ -1369,41 +1366,44 @@ a {
 	min-width: 1200px;
 	min-height: 430px;
 	margin: 0;
-	margin-left: -27px;
-	/*background: url("../img/map1.jpg") no-repeat 50% 50%;*/
-	background-size: cover;
+}
+
+.contacts-card {
+	position: relative;
+	left: 920px;
+	top: 0;
 }
 
 .map {
 	position: absolute;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
     top: 0;
     left: 0;
     border: 0;
-	z-index: 2;
 }
 
 .contacts {
+	position: relative;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-top: 60px;
+	margin-bottom: 60px;
 	width: 302px;
 	min-height: 304px;
 	margin-left: auto;
-	margin-right: 27px;
+	margin-right: 75px;
 	padding: 30px 20px;
 	padding-left: 25px;
 	background-color: #ffffff;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 15px;
-	z-index: 3;
 }
 
 .tel {
 	margin-top: 20px;
-	margin-bottom: 37px;
+	margin-bottom: 32px;
 }
 
 .tel p {
@@ -1428,8 +1428,6 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	width: 1146px;
-	margin: 0 27px;
 	padding: 16px 0 25px 0;
 }
 
@@ -1847,5 +1845,3 @@ input[type="radio"].visually-hidden {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-/*
-.connection{display: block;}*/
