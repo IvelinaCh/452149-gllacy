@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-	width: 1146px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -535,7 +535,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 40px;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	font-size: 32px;
 	line-height: 44px;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -1126,6 +1126,7 @@ a {
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
+	width: 1146px;
 	padding: 5px 27px 0 27px;
 }
 
@@ -1160,8 +1161,8 @@ a {
 }
 
 .main-container {
-	padding-left: 27px;
-	padding-right: 27px;
+	width: 1146px;
+	padding: 0 27px;
 }
 
 .poster {
@@ -1186,7 +1187,7 @@ a {
 .slider {
 	position: absolute;
 	left: 40px;
-	bottom: 48px;
+	bottom: 45px;
 	font-size: 0;
 	z-index: 5;
 }
@@ -1332,7 +1333,7 @@ a {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 
 .description {
@@ -1364,14 +1365,8 @@ a {
 	-ms-flex-align: center;
 	align-items: center;
 	min-width: 1200px;
-	min-height: 430px;
+	min-height: 427px;
 	margin: 0;
-}
-
-.contacts-card {
-	position: relative;
-	left: 920px;
-	top: 0;
 }
 
 .map {
@@ -1383,8 +1378,16 @@ a {
     border: 0;
 }
 
+.contacts-card {
+	position: relative;
+	left: 950px;
+	top: 0;
+}
+
 .contacts {
 	position: relative;
+	top: 0;
+	left: 0;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-top: 60px;
@@ -1428,7 +1431,8 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 16px 0 25px 0;
+	width: 1146px;
+	padding: 16px 27px 25px 27px;
 }
 
 .social-list {
