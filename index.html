@@ -6,7 +6,7 @@
 		<title>GllacyShop</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<input type="radio" id="slide1" class="visually-hidden" name="slide" checked>
@@ -170,8 +170,8 @@
 		<div class="maps-contacts">
 			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
 			</iframe>
-			<div class="contacts-card">
-				<section class="contacts">
+			<div class="container">
+				<section class="contacts container">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<p>Адрес главного офиса и офлайн магазина:</p>
 					<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
@@ -179,7 +179,7 @@
 						<p>Для заказов по телефону:</p>
 						<p><b><a href="#">8 812 450-25-25</a></b><span>(с 10 до 20 ежедневно)</span></p>
 					</div>
-					<a class="btn" href="#">Форма обратной связи</a>
+					<a class="btn open-btn" href="#">Форма обратной связи</a>
 				</section>
 			</div>
 		</div>
@@ -204,11 +204,11 @@
 		<h2 class="caption">Мы обязательно вам ответим!</h2>
 		<form class="connect-form" method="get">
 			<fieldset class="group">
-				<input class="input" type="text" id="name" minlength="1" required>
+				<input class="input" type="text" id="name" name="u-name" minlength="1" required>
 				<label class="place-label" for="name">Как вас зовут?</label>
 			</fieldset>
 			<fieldset class="group">
-				<input class="input" type="text" id="y-mail" minlength="1" required>
+				<input class="input" type="text" id="y-mail" name="y-mail" minlength="1" required>
 				<label class="place-label" for="y-mail">Ваша почта для ответа?</label>
 			</fieldset>
 			<textarea class="input input-area" name="comment" id="comment" rows="5" minlength="1" placeholder="Напишите что-нибудь..."></textarea>
@@ -220,5 +220,6 @@
 		</button>
 	</section>
 	</div>
+		<script src="js/javascript.min.js"></script>
 	</body>
 </html>

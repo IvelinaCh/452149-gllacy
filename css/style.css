@@ -1231,7 +1231,7 @@ a {
 	min-height: 229px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 38px;
+	margin-bottom: 39px;
 }
 
 .present-variant::before {
@@ -1256,7 +1256,7 @@ a {
 .subscription {
 	position: relative;
 	margin: 0; 
-	padding: 15px 15px 25px 20px;
+	padding: 15px 15px 23px 20px;
 	width: 560px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1288,9 +1288,8 @@ a {
 .present .btn {
 	padding: 11px 22px;
 	float: right;
-	clear: top;
 	margin-top: 26px;
-	margin-right: 5px
+	margin-right: 7px
 }
 
 .present1 {
@@ -1345,7 +1344,7 @@ a {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	margin-bottom: 40px;
-	padding: 31px 20px 20px;
+	padding: 30px 20px 20px;
 	border-radius: 15px;
 } 
 
@@ -1378,24 +1377,16 @@ a {
     border: 0;
 }
 
-.contacts-card {
-	position: relative;
-	left: 950px;
-	top: 0;
-}
-
 .contacts {
-	position: relative;
-	top: 0;
-	left: 0;
+	position: relative; 
+	float: right; 
+	margin-right: 27px;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-top: 60px;
 	margin-bottom: 60px;
 	width: 302px;
 	min-height: 304px;
-	margin-left: auto;
-	margin-right: 75px;
 	padding: 30px 20px;
 	padding-left: 25px;
 	background-color: #ffffff;
@@ -1432,7 +1423,8 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width: 1146px;
-	padding: 16px 27px 25px 27px;
+	padding: 16px 0 25px 0;
+	margin: 0 27px;
 }
 
 .social-list {
@@ -1588,6 +1580,7 @@ a {
 	padding: 10px 15px;
 	margin: 0;
 	margin-left: 10px;
+	margin-bottom: 15px;
 }
 
 .next,
@@ -1848,4 +1841,44 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+}
+
+.show-modal {
+	display: block;
+	-webkit-animation: open-effect 0.4s linear;
+	        animation: open-effect 0.4s linear;
+}
+
+@-webkit-keyframes open-effect {
+  0% {
+    -webkit-transform: translate(1000px, 1000px);
+            transform: translate(1000px, 1000px);
+  }
+
+  50% {
+    -webkit-transform: translate(500px, 500px);
+            transform: translate(500px, 500px);
+  }
+
+   100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes open-effect {
+  0% {
+    -webkit-transform: translate(1000px, 1000px);
+            transform: translate(1000px, 1000px);
+  }
+
+  50% {
+    -webkit-transform: translate(500px, 500px);
+            transform: translate(500px, 500px);
+  }
+
+   100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
