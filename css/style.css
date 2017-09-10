@@ -448,7 +448,6 @@ a {
 
 .connection  .btn {
 	float: right;
-	margin: 0;
 	padding: 10px 20px;
 }
 
@@ -1846,39 +1845,46 @@ input[type="radio"].visually-hidden {
 .show-modal {
 	display: block;
 	-webkit-animation: open-effect 0.4s linear;
-	        animation: open-effect 0.4s linear;
+	animation: open-effect 0.4s linear;
 }
 
 @-webkit-keyframes open-effect {
   0% {
     -webkit-transform: translate(1000px, 1000px);
-            transform: translate(1000px, 1000px);
+    transform: translate(1000px, 1000px);
   }
 
   50% {
     -webkit-transform: translate(500px, 500px);
-            transform: translate(500px, 500px);
+    transform: translate(500px, 500px);
   }
 
    100% {
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
 @keyframes open-effect {
   0% {
     -webkit-transform: translate(1000px, 1000px);
-            transform: translate(1000px, 1000px);
+    transform: translate(1000px, 1000px);
   }
 
   50% {
     -webkit-transform: translate(500px, 500px);
-            transform: translate(500px, 500px);
+    transform: translate(500px, 500px);
   }
 
    100% {
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
+}
+
+.no-js {
+	display: block;
+	position: relative;
+	top: 350px;
+	padding-bottom: 70px;
 }

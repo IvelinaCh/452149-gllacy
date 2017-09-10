@@ -10,6 +10,11 @@ var comment = connection_modal.querySelector("[name=comment]");
 var storage_name = localStorage.getItem("u-name");
 var storage_mail = localStorage.getItem("y-mail");
   
+  
+  if (connection_modal.classList.contains("no-js")) {
+	connection_modal.classList.remove("no-js")
+}
+  
   form_connect_open.addEventListener("click", function (evt) {
     evt.preventDefault();
     connection_modal.classList.add("show-modal");
