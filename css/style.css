@@ -314,7 +314,7 @@ a {
  }
  
 .busket {
-	width: 540px;
+	width: 539px;
 	top: 53px;
 	right: 0;
 	padding: 0;
@@ -329,39 +329,34 @@ a {
 	color: #999999;
 }
 
-.busket-form b {
-	position: absolute; 
-	top: 10px; 
-	right: -5px;
-	font-size: 15px;
-	line-height: 18px;
-	color: #323232;
-}
-
 .busket-list {
 	width: 100%;
 	margin: 0;
 }
 
-.busket-list p {
-	width: 216px;
-	padding-left: 15px;
+.busket-list td {
+	display: inline-block; 
+	vertical-align: top;
+	max-width: 216px;
+	position: relative;
+	padding: 17px 0 0;
 }
 
 .busket-list img {
-	border-radius: 50%;
-}
-
-.busket-list td {
-	display: inline-block; 
-	vertical-align: middle;
 	position: relative;
-	padding: 5px 0 0;
+	bottom: 10px;
+	border-radius: 50%;
+	margin: 0 13px 0 0;
 }
 
 .sum-basket {
-	width: 100%;
+	min-width: 100%;
+	margin: 6px 5px;
+	padding-top: -5px;
 	text-align: right;
+	font-size: 15px;
+	line-height: 18px;
+	color: #323232;
 	font-weight: bold;
 	border-top: 1px solid #c9c8c7;
 }
@@ -388,9 +383,9 @@ a {
 }
 
 .busket-form .button {
-	margin: 33px 0 20px auto;
+	margin: 3px -2px 19px auto;
 	margin-left: 335px;
-	padding: 10px 13px;
+	padding: 11px 13px;
 	border-radius: 25px;
 }
 
@@ -444,6 +439,11 @@ a {
 .del {
 	border: none;
 	background-color: transparent;
+}
+
+.del {
+	padding: 10px 0 0 0;
+	margin: 0;
 }
 
 .connection  .btn {
@@ -1258,7 +1258,7 @@ a {
 .subscription {
 	position: relative;
 	margin: 0; 
-	padding: 15px 15px 97px 20px;
+	padding: 15px 15px 25px 20px;
 	width: 560px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1288,10 +1288,11 @@ a {
 }
 
 .present .btn {
-	position: absolute;
 	padding: 11px 22px;
-	bottom: 24px;
-	right: 21px;
+	float: right;
+	clear: top;
+	margin-top: 26px;
+	margin-right: 5px
 }
 
 .present1 {
@@ -1358,6 +1359,7 @@ a {
 }
 
 .maps-contacts {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1369,6 +1371,17 @@ a {
 	margin: 0;
 	margin-left: -27px;
 	background: url("../img/map1.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.map {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+	z-index: 2;
 }
 
 .contacts {
@@ -1385,6 +1398,7 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 15px;
+	z-index: 3;
 }
 
 .tel {
@@ -1569,11 +1583,9 @@ a {
 }
 
 .subscription-form  .button {
-	position: absolute;
 	padding: 10px 15px;
 	margin: 0;
-	bottom: 40px;
-	right: 27px;
+	margin-left: 10px;
 }
 
 .next,
