@@ -1370,7 +1370,7 @@ a {
 	min-height: 430px;
 	margin: 0;
 	margin-left: -27px;
-	background: url("../img/map1.jpg") no-repeat 50% 50%;
+	/*background: url("../img/map1.jpg") no-repeat 50% 50%;*/
 	background-size: cover;
 }
 
