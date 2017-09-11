@@ -11,7 +11,16 @@ var storage_name = localStorage.getItem("u-name");
 var storage_mail = localStorage.getItem("y-mail");
 
 var body = document.body;
-  
+
+var storage_name; 
+var storage_mail; 
+
+try { 
+storageName = localStorage.getItem("u-name"); 
+storageEmail = localStorage.getItem("y-mail"); 
+} catch (e) { 
+console.log(e.message, e.name); 
+}
   
   if (body.classList.contains("no-js")) {
 	body.classList.remove("no-js")
