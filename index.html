@@ -6,9 +6,9 @@
 		<title>GllacyShop</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="no-js">
 		<input type="radio" id="slide1" class="visually-hidden" name="slide" checked>
 		<input type="radio" id="slide2" class="visually-hidden" name="slide">
 		<input type="radio" id="slide3" class="visually-hidden" name="slide">
@@ -36,7 +36,7 @@
 				<li class="user-navigation-li">
 					<button class="user-style button button-search" type="button">Поиск</button>
 					<div class="transparent">
-						<form class="search-form modal" method="get">
+						<form class="search-form modal" action="https://echo.htmlacademy.ru" method="post">
 							<fieldset class="group">
 								<input class="input" type="search" id="search" name="search" minlength="1" required>
 								<label class="place-label" for="search">Что ищем?</label>
@@ -49,7 +49,7 @@
 					<div class="transparent">
 						<section class="login modal">
 							<h2 class="visually-hidden">Авторизация</h2>
-							<form class="login-form" method="get">
+							<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 								<fieldset class="group">
 									<input class="input input-login-form" type="text" id="mail" minlength="1" required>
 									<label class="place-label" for="mail">Электронная почта</label>
@@ -156,7 +156,7 @@
 				<h2 class="visually-hidden">Оформить подписку</h2>
 				<div class="subscription-fon">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<form class="subscription-form" method="get" action="https://echo.htmlacademy.ru">
+					<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="group">
 							<input class="input" type="text" id="email" minlength="1" required>
 							<label class="place-label" for="email">Электронная почта</label>
@@ -200,9 +200,9 @@
 		<p class="copyright"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип html академии">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 	</footer>
 	</div>
-	<section class="connection modal no-js">
+	<section class="connection modal">
 		<h2 class="caption">Мы обязательно вам ответим!</h2>
-		<form class="connect-form" method="get">
+		<form class="connect-form" action="https://echo.htmlacademy.ru" method="post">
 			<fieldset class="group">
 				<input class="input" type="text" id="name" name="u-name" minlength="1" required>
 				<label class="place-label" for="name">Как вас зовут?</label>
@@ -220,6 +220,6 @@
 		</button>
 	</section>
 	</div>
-		<script src="js/javascript.min.js"></script>
+		<script src="js/javascript.js"></script>
 	</body>
 </html>
