@@ -7,9 +7,6 @@ var u_name = connection_modal.querySelector("[name=u-name]");
 var y_mail = connection_modal.querySelector("[name=y-mail]");
 var comment = connection_modal.querySelector("[name=comment]");
 
-var storage_name = localStorage.getItem("u-name");
-var storage_mail = localStorage.getItem("y-mail");
-
 var body = document.body;
 
 var storage_name; 
