@@ -1882,6 +1882,28 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@keyframes error-effect {
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+    transform: scale(0.2);
+  }
+
+	20%,
+	40%,
+	60%,
+	80% ,
+	100% {
+    transform: scale(1);
+  }
+}
+
+.error-modal {
+	-webkit-animation: open-effect 0.3s linear;
+	animation: error-effect 0.3s linear;
+}
 
 .no-js .connection{
 	display: block;

@@ -38,11 +38,15 @@ console.log(e.message, e.name);
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     connection_modal.classList.remove("show-modal");
+	connection_modal.classList.remove("error-modal");
   });
   
   connect_form.addEventListener("submit", function (evt) {
 	if (!u_name.value || !y_mail.value || !comment.value) {
 	evt.preventDefault();	
+	connection_modal.classList.remove("error-modal");
+    connection_modal.offsetWidth = connection_modal.offsetWidth;
+	connection_modal.classList.add("error-modal");
 	console.log("Не все поля заполнены");
 } else {
 	localStorage.setItem("u_name", u_name.value);
@@ -54,6 +58,7 @@ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (connection_modal.classList.contains("show-modal")) {
         connection_modal.classList.remove("show-modal");
+		connection_modal.classList.remove("error-modal");
       }
     }
   });  
